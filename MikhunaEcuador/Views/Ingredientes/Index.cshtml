@@ -1,0 +1,39 @@
+﻿@model IEnumerable<MikhunaEcuador.Models.Ingrediente>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Unidad)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Unidad)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IngredienteID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IngredienteID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IngredienteID })
+        </td>
+    </tr>
+}
+
+</table>
