@@ -12,30 +12,30 @@
 {
     @Html.AntiForgeryToken()
 
-    <div class="Receta">
+    <div class="Receta" id="mostrarReceta">
 
         <div class="Receta-Iz">
             <!--<h3>Receta</h3>-->
             @Html.ValidationSummary(true, "", new { @class = "" })
             <div class="">
-                @Html.LabelFor(model => model.Nombre, htmlAttributes: new { @class = "" })
+                @Html.LabelFor(model => model.Nombre)
                 <div class="">
                     @Html.EditorFor(model => model.Nombre, new { htmlAttributes = new { @class = "inputsReceta", @name = "Nombre" } })
-                    @Html.ValidationMessageFor(model => model.Nombre, "", new { @class = "" })
+                    @Html.ValidationMessageFor(model => model.Nombre, "")
                 </div>
             </div>
 
-            @Html.LabelFor(model => model.Duracion, htmlAttributes: new { @class = "" })
+            @Html.LabelFor(model => model.Duracion)
             <div class="">
                 @Html.EditorFor(model => model.Duracion, new { htmlAttributes = new { @class = "inputsReceta", @name = "Duracion" } })
-                @Html.ValidationMessageFor(model => model.Duracion, "", new { @class ="" })
+                @Html.ValidationMessageFor(model => model.Duracion, "")
             </div>
 
             <input id="urlImg" name="u" type="hidden" />
             <!--<textarea id="urlImg" name="u" type="hidden" ></textarea>-->
-            @Html.Label("Imagen")
-        <div>
-            <label for="imageUploader">Seleccionar archivo</label>
+            @Html.Label( "Imagen")
+        <div id="labelImg">
+            <label for="imageUploader" id="forImageUploader">Seleccionar archivo</label>
             <input id="imageUploader" class="inputsReceta" type="file" accept="image/png, .jpg, .jpeg, image/gif" name="archivito">
         </div>
             
@@ -58,77 +58,74 @@
     <div class="bCrear">
         <div>
 
-            <input type="submit" class="btn btn-default" id="btnRegister" value="Crear" />
+            <input type="submit" class="btn btn-default btnH" id="btnCrearReceta" value="Crear" />
         </div>
     </div>
 
 }
 
 
+<div id="oculto1">
+    <!--Ingrediente-->
 
-
-<!--Ingrediente-->
-
-<form action="/Ingredientes/Create" method="post">
-    @Html.AntiForgeryToken()
-    <div class="Ingredientes">
-        <div class="form-horizontal">
-            <h3 class="titulo">Ingrediente</h3>
-            <hr />
-            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-            <div class="form-group">
-                @Html.LabelFor(model => model.NombreIngrediente, htmlAttributes: new { @class = "" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.NombreIngrediente, new { htmlAttributes = new { @class = "inputsIngrediente" } })
-                    @Html.ValidationMessageFor(model => model.NombreIngrediente, "", new { @class = "text-danger" })
+    <form action="/Ingredientes/Create" method="post">
+        @Html.AntiForgeryToken()
+        <div class="Ingredientes">
+            <div class="form-horizontal">
+                <h3 class="titulo">Ingrediente</h3>
+                <hr />
+                @Html.ValidationSummary(true, "", new { })
+                <div class="form-group">
+                    @Html.LabelFor(model => model.NombreIngrediente, htmlAttributes: new { @class = "" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.NombreIngrediente, new { htmlAttributes = new { @class = "inputsIngrediente" } })
+                        @Html.ValidationMessageFor(model => model.NombreIngrediente, "", new { })
+                    </div>
                 </div>
-            </div>
 
-            <div class="form-group">
-                @Html.LabelFor(model => model.UnidadIngrediente, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.UnidadIngrediente, new { htmlAttributes = new { @class = "inputsIngrediente" } })
-                    @Html.ValidationMessageFor(model => model.UnidadIngrediente, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.LabelFor(model => model.UnidadIngrediente, htmlAttributes: new { })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.UnidadIngrediente, new { htmlAttributes = new { @class = "inputsIngrediente" } })
+                        @Html.ValidationMessageFor(model => model.UnidadIngrediente, "", new { })
+                    </div>
                 </div>
-            </div>
-            <div>
                 <div>
-                    <input type="submit" value="Crear" class="btn btn-default hov" />
+                    <div>
+                        <input type="submit" value="Crear" class="btn btn-default btnH" />
 
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</form>
+    </form>
 
-<!--Pasos-->
-<form action="/Pasos/Create" method="post">
-    @Html.AntiForgeryToken()
-    <div class="Pasos">
-        <div class="form-horizontal">
-            <h3>Pasos de Preparación</h3>
-            <hr />
-
+    <!--Pasos-->
+    <form action="/Pasos/Create" method="post">
+        @Html.AntiForgeryToken()
+        <div class="Pasos">
+            <div class="form-horizontal">
+                <h3 class="titulo">Pasos de Preparación</h3>
+                <hr />
 
 
-            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-            <div class="form-group">
-                @Html.LabelFor(model => model.Paso, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.Paso, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.Paso, "", new { @class = "text-danger" })
+
+                @Html.ValidationSummary(true, "", new { })
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Paso, htmlAttributes: new { })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Paso, new { htmlAttributes = new { @class = "inputsIngrediente" } })
+                        @Html.ValidationMessageFor(model => model.Paso, "", new { })
+                    </div>
                 </div>
-            </div>
 
-            <div class="form-group">
-                <div class="col-md-offset-2 col-md-10">
-                    <input type="submit" value="Crear" class="btn btn-default" />
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Crear" class="btn btn-default btnH" />
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</form>
-
-
-
+    </form>
+</div>
 

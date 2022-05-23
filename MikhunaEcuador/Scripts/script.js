@@ -43,6 +43,16 @@ function girarLogin2() {
 
 }
 
+var btnCrearReceta = Document.getElementById("btnCrearReceta");
+
+
+function mostrar() {
+    var receta = Document.getElementById("mostrarReceta");
+    var ingrePasos = Document.getElementById("oculto1");
+    receta.style.visibility = "hidden";
+    ingrePasos.style.visibility = "initial";
+}
+
 
 
 

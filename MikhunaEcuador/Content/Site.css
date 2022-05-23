@@ -673,16 +673,36 @@ h2 {
 #imageUploader {
     margin-bottom: 1rem;
     display:none;
-   
     background-color:#ea8127;
 }
 
+#forImageUploader {
+    padding-top:0.3rem;
+    padding-bottom:0.3rem;
+    padding-left:1rem;
+    padding-right:1rem;
+    background-color: #f1a224;
+    border-radius: 20%;
+}
+
+#forImageUploader:hover {
+      background-color: #f66302; 
+}
+
+.btnH:hover {
+    background-color: #f66302;
+    
+}
+
+#labelImg {
+    margin-top: 1rem;
+}
 
 .Ingredientes {
     background: #f5be77;
     width: 100%;
     border-radius: 7px;
-    text-align:center;
+    text-align: center;
 }
 
 .inputsIngrediente {
@@ -696,9 +716,9 @@ h2 {
 }
 
 .Pasos {
+    text-align:center;
     background: #f5be77;
-    width: 300px;
-    height: 230px;
+    width: 100%;
     border-radius: 7px;
 }
 
@@ -745,3 +765,6 @@ h2 {
     max-height: 100%;
     padding-right: 30px;
 }*/
+
+#oculto1 {
+}

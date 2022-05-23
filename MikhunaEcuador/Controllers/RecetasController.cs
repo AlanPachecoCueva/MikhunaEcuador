@@ -40,7 +40,7 @@ namespace MikhunaEcuador.Controllers
             return View();
         }
 
-        [Authorize]
+        /*[Authorize]*/
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create( RecetaViewModel receta, string u)
