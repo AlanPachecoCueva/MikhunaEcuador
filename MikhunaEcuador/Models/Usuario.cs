@@ -24,11 +24,7 @@ namespace MikhunaEcuador.Models
         [Required]
         [StringLength(30, MinimumLength = 8)]
         public string Clave { get; set; }
-       
-
-
-
-
+      
         public int Nivel { get; set; }
         
         //public virtual int RecetaTerminadaID { get; set; }
@@ -37,7 +33,8 @@ namespace MikhunaEcuador.Models
 
         //public virtual int FavoritoID { get; set; }
         //[ForeignKey("FavoritoID")]
-        //public virtual ICollection<Usuario> Favoritos { get; set; }
+        //Apunta a varios favoritos
+        public virtual ICollection<Favoritos> Favoritos { get; set; }
 
     }
 }

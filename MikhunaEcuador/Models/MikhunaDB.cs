@@ -16,6 +16,7 @@ namespace MikhunaEcuador.Models
         public DbSet<Usuario> Usuario { get; set; }
         public DbSet<Pasos> Pasos { get; set; }
         public DbSet<RecetasTerminadas> RecetasTerminadas { get; set; }
+        public DbSet<Comentario> Comentario { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

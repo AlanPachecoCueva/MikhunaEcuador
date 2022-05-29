@@ -14,11 +14,19 @@ namespace MikhunaEcuador.Models
         //Primary Key
         [Key]
         public int CalificacionID { get; set; }
+
         [Required]
         public float NumeroEstrellas { get; set; }
+
         public virtual int RecetaID { get; set; }
+
         [ForeignKey("RecetaID")]
-        public virtual Receta Recetas { get; set; }
+        public virtual Receta Receta { get; set; }
+
+        public virtual int UsuarioID { get; set; }
+
+        [ForeignKey("UsuarioID")]
+        public virtual Usuario Usuario { get; set; }
 
     }
 }
