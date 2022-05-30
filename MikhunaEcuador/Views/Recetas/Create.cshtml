@@ -11,8 +11,8 @@
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-
-    <div class="Receta" id="mostrarReceta">
+<div id="mostrarReceta">
+    <div class="Receta">
 
         <div class="Receta-Iz">
             <!--<h3>Receta</h3>-->
@@ -33,12 +33,12 @@
 
             <input id="urlImg" name="u" type="hidden" />
             <!--<textarea id="urlImg" name="u" type="hidden" ></textarea>-->
-            @Html.Label( "Imagen")
-        <div id="labelImg">
-            <label for="imageUploader" id="forImageUploader">Seleccionar archivo</label>
-            <input id="imageUploader" class="inputsReceta" type="file" accept="image/png, .jpg, .jpeg, image/gif" name="archivito">
-        </div>
-            
+            @Html.Label("Imagen")
+            <div id="labelImg">
+                <label for="imageUploader" id="forImageUploader">Seleccionar archivo</label>
+                <input id="imageUploader" class="inputsReceta" type="file" accept="image/png, .jpg, .jpeg, image/gif" name="archivito">
+            </div>
+
         </div>
 
         <!--Imagen-->
@@ -49,7 +49,7 @@
                 </div>
 
             </div>
-            
+
         </div>
 
 
@@ -61,7 +61,7 @@
             <input type="submit" class="btn btn-default btnH" id="btnCrearReceta" value="Crear" />
         </div>
     </div>
-
+</div>
 }
 
 
@@ -114,7 +114,7 @@
                 <div class="form-group">
                     @Html.LabelFor(model => model.Paso, htmlAttributes: new { })
                     <div class="col-md-10">
-                        @Html.EditorFor(model => model.Paso, new { htmlAttributes = new { @class = "inputsIngrediente" } })
+                        @Html.EditorFor(model => model.Paso, new { htmlAttributes = new { @class = "inputsIngrediente inputPaso" } })
                         @Html.ValidationMessageFor(model => model.Paso, "", new { })
                     </div>
                 </div>

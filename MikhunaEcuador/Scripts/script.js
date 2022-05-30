@@ -43,15 +43,27 @@ function girarLogin2() {
 
 }
 
-var btnCrearReceta = Document.getElementById("btnCrearReceta");
+//var btnCrearReceta = document.getElementById("btnCrearReceta");
 
 
-function mostrar() {
-    var receta = Document.getElementById("mostrarReceta");
-    var ingrePasos = Document.getElementById("oculto1");
-    receta.style.visibility = "hidden";
-    ingrePasos.style.visibility = "initial";
-}
+//var receta = document.getElementById('mostrarReceta');
+//var displayReceta = receta.getAttribute('display');
+//var ingrePasos = document.getElementById('oculto1');
+//var displayIngrePasos = ingrePasos.getAttribute('display');
+
+////En un inicio los displays de ingrepasos está desactivado
+//ingrePasos.style.display = "none";
+
+//function mostrar() {
+//    //Desactivo el display
+//    receta.style.display = "none";
+
+//    //Vuelvo a activar
+//    ingrePasos.style.display = displayIngrePasos;
+
+//    console.log("Sí se muestraeeeee");
+//    //ingrePasos.style.visibility = "initial";
+//}
 
 
 

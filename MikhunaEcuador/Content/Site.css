@@ -615,12 +615,13 @@ h2 {
 
 /************Crear nueva receta*******/
 .Receta {
-    width:100%;
+    width: 100%;
     background: #f5be77;
-     /*width: 300px;
+    /*width: 300px;
     height: 490px;*/
     border-radius: 7px;
-    display:inline-flex;
+    display: inline-flex;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
 }
 
 .Receta-Iz {
@@ -635,8 +636,8 @@ h2 {
 }
 
 .fondoblanco {
-    width: 50%;
-    height: 14rem;
+    width: 90%;
+    height: 30rem;
     border-radius: 7px;
     background-color: white;
     margin: auto;
@@ -703,12 +704,19 @@ h2 {
     width: 100%;
     border-radius: 7px;
     text-align: center;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
 }
 
 .inputsIngrediente {
     margin-top:1rem;
     margin-bottom:1rem;
     width:25rem;
+    border-radius:1%;
+}
+
+.inputPaso {
+    width:60rem;
+    height:5rem;
 }
 
 .titulo {
@@ -716,10 +724,11 @@ h2 {
 }
 
 .Pasos {
-    text-align:center;
+    text-align: center;
     background: #f5be77;
     width: 100%;
     border-radius: 7px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
 }
 
 
