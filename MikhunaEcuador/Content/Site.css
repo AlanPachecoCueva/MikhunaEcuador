@@ -686,9 +686,9 @@ h2 {
     border-radius: 20%;
 }
 
-#forImageUploader:hover {
-      background-color: #f66302; 
-}
+    #forImageUploader:hover {
+        background-color: #f66302;
+    }
 
 .btnH:hover {
     background-color: #f66302;
@@ -775,5 +775,68 @@ h2 {
     padding-right: 30px;
 }*/
 
-#oculto1 {
+/*Comentarios*/
+#comentarios {
+    margin-top:2rem;
+    background: #f5be77;
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
+    border:1px solid green;
+}
+
+#enviarComentario {
+    border: 1px solid red;
+    margin: auto;
+    text-align: center;
+    background-color: #e3eff1;
+    width: 75rem;
+    border-radius: 12px;
+    font-family: 'Malgun Gothic';
+    text-align: left;
+    padding-left: 1rem;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+#inputComentario {
+    margin-top:1rem;
+    width:98%;
+    height:10rem;
+}
+
+#inputComentarioAbajo {
+    width: 98%;
+    background-color: #f8ddba;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#inputParteUsu {
+    display: block;
+}
+
+#inputCombtn {
+    margin-top:0.3rem;
+}
+
+.imgUsuComentario {
+    width: 3rem;
+}
+
+#n {
+    margin:0;
+}
+
+#cargarComentarios {
+    border: 1px solid yellow;
+    margin-bottom: 1rem;
+    margin: auto;
+    background-color: #e3eff1;
+    width: 75rem;
+    border-radius: 12px;
+    font-family: 'Malgun Gothic';
+    text-align: left;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
 }
