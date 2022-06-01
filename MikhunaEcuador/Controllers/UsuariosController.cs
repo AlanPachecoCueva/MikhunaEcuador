@@ -17,17 +17,54 @@ namespace MikhunaEcuador.Controllers
 
         //Datos del usuario que inició sesión
         public static String Usu;
+        public static int idUsu;
 
+        public ActionResult GuardarImagenPerfil(string UrlImgPerfil) {
+            if (UrlImgPerfil.CompareTo("") != 0) {
+                var Us = db.Usuario.Find(idUsu);
+
+                if (Us != null) {
+                    Us.Imagen = UrlImgPerfil;
+                    if (ModelState.IsValid)
+                     {
+                        
+                        db.Entry(Us).State = EntityState.Modified;
+                        db.SaveChanges();
+                        return RedirectToAction("Perfil");
+                    }
+                }
+            }
+            return RedirectToAction("Perfil");
+        }
 
         public void GuardarUsuario()
         {
             Usu = User.Identity.Name;
+            if (Usu.CompareTo("") != 0) {
+                idUsu = db.Usuario.FirstOrDefault(e => e.NickName == Usu).UsuarioID;
+            }
         }
 
         [Authorize]
         public string GetUsu() {
             GuardarUsuario();
             var aux = "Bienvenido " + Usu;
+            return aux;
+        }
+
+        [Authorize]
+        public string GetSoloUsu()
+        {
+            GuardarUsuario();
+            var aux = Usu;
+            return aux;
+        }
+
+        [Authorize]
+        public int GetIdUsu()
+        {
+            GuardarUsuario();
+            var aux = idUsu;
             return aux;
         }
 
@@ -130,6 +167,11 @@ namespace MikhunaEcuador.Controllers
 
         public ActionResult Perfil()
         {
+            var Usuario = db.Usuario.FirstOrDefault(e => e.UsuarioID == UsuariosController.idUsu);
+            
+            if (Usuario != null ) {
+                return View(Usuario);
+            }
             return View();
         }
 

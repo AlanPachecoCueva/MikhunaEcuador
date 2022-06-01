@@ -14,6 +14,34 @@ namespace MikhunaEcuador.Controllers
     {
         private MikhunaDB db = new MikhunaDB();
 
+        [Authorize]
+        [HttpPost]
+        //Para agregar un comentario
+        public ActionResult AgregarComentario(String comentario, String i) {
+            if (ModelState.IsValid)
+            {
+                if (comentario.CompareTo("") != 0)
+                {
+                    //Si el comentario no está vacío
+                    Comentario contenido = new Comentario {
+                        ComentarioID = 1,
+                        Contenido = comentario,
+                        RecetaID = Convert.ToInt32(i),
+                        UsuarioID = UsuariosController.idUsu
+                    };
+
+                    db.Comentario.Add(contenido);
+
+                    db.SaveChanges();
+                    return RedirectToAction("BuscarReceta","Home", new {id = Convert.ToInt32(i) });
+                }
+            }
+
+            return RedirectToAction("BuscarReceta", "Home", new { id = Convert.ToInt32(i) });
+
+        }
+
+        
         // GET: Comentarios
         public ActionResult Index()
         {
@@ -21,6 +49,8 @@ namespace MikhunaEcuador.Controllers
             return View(comentario.ToList());
         }
 
+        [Authorize]
+        [HttpPost]
         // GET: Comentarios/Details/5
         public ActionResult Details(int? id)
         {

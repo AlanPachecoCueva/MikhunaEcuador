@@ -26,7 +26,10 @@ namespace MikhunaEcuador.Models
         public string Clave { get; set; }
       
         public int Nivel { get; set; }
-        
+
+        [StringLength(400)]
+        public string Imagen { get; set; }
+
         //public virtual int RecetaTerminadaID { get; set; }
         //[ForeignKey("RecetaTerminadaID")]
         //public virtual ICollection<RecetasTerminadas> RecetasTerminadas { get; set; }

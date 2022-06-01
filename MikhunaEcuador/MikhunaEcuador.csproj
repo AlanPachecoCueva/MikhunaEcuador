@@ -158,6 +158,7 @@
     <Content Include="Images\sopaMarinera.png" />
     <Content Include="Images\uchu.jpg" />
     <Content Include="Scripts\Imagen.js" />
+    <Content Include="Scripts\ImagenPerfil.js" />
     <Content Include="Scripts\script.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -186,6 +187,7 @@
     <Compile Include="Models\RecetasTerminadas.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\ComentarioViewModel.cs" />
     <Compile Include="ViewModel\ImprimirRecetaViewModel.cs" />
     <Compile Include="ViewModel\RecetaViewModel.cs" />
   </ItemGroup>

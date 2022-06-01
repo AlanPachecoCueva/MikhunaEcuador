@@ -6,6 +6,7 @@
     var receta = Model.Receta;
     var pasos = Model.Pasos;
     var ingredientes = Model.Ingredientes;
+    var comentarios = Model.Comentarios;
     var iterador = 0;
 }
 
@@ -121,19 +122,28 @@
 
 
         <div id="enviarComentario">
-            <form>
-                <input type="text" id="inputComentario" />
+            <form action="/Comentarios/AgregarComentario" method="post">
+                <textarea type="text" id="inputComentario" name="comentario"></textarea>
+                <input type="hidden" name="i" value="@receta.RecetaID" />
 
                 <div id="inputComentarioAbajo">
                     <div id="inputParteUsu">
                         <img class="imgUsuComentario" src="~/Images/1.1.png" />
-                        <h5 id="n">NombreUsuario</h5>
+
+                        @{
+                            if (User.Identity.IsAuthenticated)
+                            {
+                                <h5>@Html.Action("GetSoloUsu", "Usuarios", new { htmlAttributes = new { id = "n" } }) </h5>
+                            }
+
+                        }
+
                     </div>
-                    
+
                     <div id="inputCombtn">
                         <button class="btnH btn">Enviar</button>
                     </div>
-                    
+
                 </div>
 
             </form>
@@ -141,15 +151,19 @@
 
 
         <div id="cargarComentarios">
-            <div class="comentario">
-                <div>
-                    <img class="imgUsuComentario" src="~/Images/1.1.png" />
-                    <h2>NombreUsuario</h2>
+            @foreach (var i in comentarios)
+            {
+                <div class="comentario">
+                    <div>
+                        <img class="imgUsuComentario" src="~/Images/1.1.png" />
+                        <h2>@i.Usuario.NickName</h2>
+                    </div>
+                    <div>
+                        <a>@i.Contenido</a>
+                    </div>
                 </div>
-                <div >
-                    <a>Comentario publicado</a>
-                </div>
-            </div>
+            }
+
 
         </div>
 

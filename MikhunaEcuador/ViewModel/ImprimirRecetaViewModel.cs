@@ -16,5 +16,8 @@ namespace MikhunaEcuador.ViewModel
 
         //Pasos
         public IList<Pasos> Pasos { get; set; }
+
+        //Comentarios
+        public IList<Comentario> Comentarios { get; set; }
     }
 }

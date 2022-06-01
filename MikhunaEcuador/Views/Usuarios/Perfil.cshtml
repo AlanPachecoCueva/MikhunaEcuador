@@ -1,4 +1,5 @@
-﻿
+﻿@model MikhunaEcuador.Models.Usuario
+
 @{
     ViewBag.Title = "Perfil";
 }
@@ -10,15 +11,33 @@
 <html lang="en">
 
 <head>
-    
+
 </head>
 <body>
 
     <div class="container">
         <div class="perfil-header">
+
+            <!--Carga La imagen-->
             <div class="perfil-img">
-                <img src="~/Images/logoFinal.png" width="200" alt="100">
+                <img src="@Model.Imagen" >
+                <img  id="imgPreviewPerfil">
             </div>
+
+
+            @Html.Label("Imagen")
+            <div id="labelImg">
+                <label for="imageUploaderPerfil" id="forImageUploaderPerfil">Seleccionar archivo</label>
+                <input id="imageUploaderPerfil" class="inputsReceta" type="file" accept="image/png, .jpg, .jpeg, image/gif" name="archivitoPerfil">
+            </div>
+
+            <form action="/Usuarios/GuardarImagenPerfil" method="post">
+                <input id="UrlImgPerfil" type="hidden" name="UrlImgPerfil"/>
+                <input type="submit" value="Guardar"/>
+            </form>
+
+
+
             <div class="perfil-nav-info">
                 <h3 class="Nickname">
                     Juan Calvopiña
@@ -33,12 +52,14 @@
                     Expert
                 </span>
             </div>
+
             <div class="perfil-opt">
                 <div class="Notificacion">
                     <p class="fa fa-bell"></p>
                     <span class="Mensaje-Alerta">1</span>
                 </div>
             </div>
+
         </div>
 
     </div>
@@ -46,7 +67,7 @@
 
 
 </html>
-
+<script src="/Scripts/ImagenPerfil.js"></script>
 
 
 

@@ -48,12 +48,16 @@ namespace Mikhuna_Ecuador.Controllers
                     var pasos = from b in db.Pasos
                                 where b.RecetaID == id
                                 select b;
+                    var comentarios = from b in db.Comentario
+                                      where b.RecetaID == id
+                                      select b;
 
                     var aux = new ImprimirRecetaViewModel
                     {
                         Receta = receta,
                         Ingredientes = ingredientes.ToList(),
-                        Pasos = pasos.ToList()
+                        Pasos = pasos.ToList(),
+                        Comentarios = comentarios.ToList()
                     };
 
 
