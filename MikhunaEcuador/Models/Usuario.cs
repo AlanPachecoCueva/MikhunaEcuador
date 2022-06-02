@@ -22,7 +22,7 @@ namespace MikhunaEcuador.Models
         public string Correo { get; set; }
 
         [Required]
-        [StringLength(30, MinimumLength = 8)]
+        [StringLength(30, MinimumLength = 4)]
         public string Clave { get; set; }
       
         public int Nivel { get; set; }

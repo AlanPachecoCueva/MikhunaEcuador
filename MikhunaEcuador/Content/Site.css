@@ -348,7 +348,7 @@ background-color:red;
     display: flow;
 }
 
-.btn, .in, .nombreUsuario, #usuario, #contra, #contra2, #email, #nombre {
+.btn, .in, .nombreUsuario, #usuario, #contra, #contra2, #email, #nombre, .inputsPerfil{
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     border: none;
@@ -781,11 +781,15 @@ h2 {
 
 /*Comentarios*/
 #comentarios {
-    margin-top:2rem;
+    margin-top: 2rem;
     background: #f5be77;
     width: 100%;
     border-radius: 7px;
     box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
+}
+
+.comentarioTit {
+    text-align:center;
 }
 
 #enviarComentario {
@@ -887,11 +891,7 @@ h2 {
 /*******************PERFIL*************************/
 
 .titPerfil {
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    padding-top: 2rem;
-
-    margin-bottom:1rem;
+    
 }
 
 .perfil-header {
@@ -907,6 +907,9 @@ h2 {
 
     min-height:20rem;
     max-height:30rem;
+
+    border:7px solid #acacac;
+    border-radius:7%;
 }
 
 
@@ -942,6 +945,36 @@ h2 {
     display: inline-block;
 
     border-bottom: 1px solid #f1a224;
+}
+
+
+/*Contenido Del Perfil*/
+
+.contenido-perfil {
+    text-align:center;
+    padding-bottom:3rem;
+}
+
+.datos-perfil {
+    display: inline-block;
+    border: 1px solid #ff7500;
+    border-radius:2%;
+    width: 40rem;
+    padding-bottom: 1rem;
+}
+
+#labelPerfil {
+    display: inline-block;
+    background-color: white;
+    line-height: 45px;
+    width: 12.2rem;
+    height: 2.5rem;
+}
+
+#formPer {
+    padding-bottom: 2rem;
+    border-radius: 2%;
+    border: 1px solid #ffdfc5;
 }
 
 

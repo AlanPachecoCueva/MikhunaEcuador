@@ -8,7 +8,7 @@
 
 <!--Hagan de aquí para abajo-->
 
-<html lang="en">
+<html lang="es">
 
 <body>
 
@@ -44,8 +44,39 @@
 
 
         </div>
+
+        <!--Parte de abajo-->
+        <div class="contenido-perfil">
+            <h1 class="comentarioTit">Información de Perfil</h1>
+
+            <div class="datos-perfil">
+                <form action="/Usuarios/EditarUsuario" method="post">
+                    <div id="formPer">
+                        <h2>Nombre de usuario</h2>
+                        <input type="text" class="inputsPerfil" value="@Model.NickName" name="NombreUsuario" />
+                        <h2>Correo electrónico</h2>
+                        <input type="email" class="inputsPerfil" value="@Model.Correo" name="Correo" />
+                        <h2>Clave</h2>
+                        <input type="password" class="inputsPerfil" value="@Model.Clave " name="Clave" />
+                        <h2 class="inputsPerfil">Nivel</h2>
+
+                        <div id="labelPerfil">
+                            @Model.Nivel
+                        </div>
+                    </div>
+                    
+                    <input id="guardarImgPerfil" class="btn btnH" type="submit" value="Guardar" />
+                </form>
+
+
+            </div>
+
+
         </div>
-    </body>
+
+
+    </div>
+</body>
 
 
     </html>

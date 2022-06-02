@@ -220,7 +220,40 @@ namespace MikhunaEcuador.Controllers
             return View(usuario);
         }
 
-        // GET: Usuarios/Edit/5
+
+        //Para editar el usuario
+        [HttpPost]
+
+        public ActionResult EditarUsuario(string NombreUsuario, string Correo, string Clave) {
+            //No pido Id porque los datos del usuario ya están guardados
+
+
+            if (NombreUsuario.CompareTo("") != 0 && Correo.CompareTo("") != 0 && Clave.CompareTo("") != 0)
+            {
+                var Us = db.Usuario.Find(idUsu);
+
+                if (Us != null)
+                {
+                    Us.NickName = NombreUsuario;
+                    Us.Correo = Correo;
+                    Us.Clave = Clave;
+
+                    if (ModelState.IsValid)
+                    {
+
+                        db.Entry(Us).State = EntityState.Modified;
+                        db.SaveChanges();
+                        return RedirectToAction("Perfil");
+                    }
+                }
+            }
+            return RedirectToAction("Perfil");
+
+
+
+        }
+
+        //GET: Usuarios/Edit/5
         //public ActionResult Edit(int? id)
         //{
         //    if (id == null)
@@ -235,13 +268,13 @@ namespace MikhunaEcuador.Controllers
         //    return View(usuario);
         //}
 
-        // POST: Usuarios/Edit/5
-        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que quiere enlazarse. Para obtener 
-        // más detalles, vea https://go.microsoft.com/fwlink/?LinkId=317598.
+        // //POST: Usuarios/Edit/5
+        //// Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que quiere enlazarse. Para obtener 
+        //// más detalles, vea https://go.microsoft.com/fwlink/?LinkId=317598.
         //[HttpPost]
         //[ValidateAntiForgeryToken]
         //public ActionResult Edit([Bind(Include = "UsuarioID,NickName,Correo,Clave,Nivel")] Usuario usuario)
-        //{
+        //{ 
         //    if (ModelState.IsValid)
         //    {
         //        db.Entry(usuario).State = EntityState.Modified;
