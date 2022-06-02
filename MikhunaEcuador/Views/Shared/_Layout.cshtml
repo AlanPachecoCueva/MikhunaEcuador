@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    
     <div class="hbar">
 
         <img id="img-banLayout" src="~/Images/bannerComidaRe.png" />
@@ -17,9 +18,9 @@
             <img id="logo" src="~/Images/logoFinal.png" />
             <div class="navBar">
                 @Html.ActionLink("M", "Index", "Home", new { area = "4" }, new { @class = "txtMikhuna m" })
-                @Html.ActionLink("ikhuna    ", "Index", "Home", new { area = "4" }, new { @class = "txtMikhuna n", padding = 5 })
-                @Html.ActionLink("  Agregar Receta   ", "Create", "Recetas", new { area = "4" }, new { @class = "txtMikhuna n" })
-                @Html.ActionLink(" Perfil  ", "Perfil", "Usuarios", new { area = "4" }, new { @class = "txtMikhuna n" })
+                @Html.ActionLink("ikhuna", "Index", "Home", new { area = "4" }, new { @class = "txtMikhuna n", padding = 5 })
+                @Html.ActionLink("Agregar Receta", "Create", "Recetas", new { area = "4" }, new { @class = "txtMikhuna n" })
+                @Html.ActionLink("Perfil", "Perfil", "Usuarios", new { area = "4" }, new { @class = "txtMikhuna n" })
                 @Html.ActionLink("Login", "Login", "Usuarios", new { area = "4" }, new { @class = "txtMikhuna n" })
             </div>
             
@@ -45,11 +46,10 @@
 
         <!--Linea separación footer y body-->
 
-        <hr />
     </div>
 
     <footer>
-        <p>&copy; @DateTime.Now.Year - Mikhuna</p>
+        <p id="textoFooter">&copy; @DateTime.Now.Year - Mikhuna</p>
     </footer>
 
 

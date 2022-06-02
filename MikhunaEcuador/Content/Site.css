@@ -76,6 +76,11 @@ footer {
     text-decoration-color: unset;
 }
 
+#textoFooter {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
 #logo {
     width: 3rem;
     margin-left: 1rem;
@@ -132,11 +137,11 @@ footer {
 }
 
 .elim {
-    display:block;
+    display: block;
 }
 
 .categoria-receta {
-    margin-bottom: 1rem;
+    /*margin-bottom: 1rem;*/
     margin-left: 0px;
     margin-right: 0px;
 
@@ -154,8 +159,8 @@ footer {
     grid-gap: 3rem;
     align-items: center;
     justify-content: center;
-    padding-bottom: 10px;
-    margin-bottom: 2rem;
+    padding-bottom: 5rem;
+    /*margin-bottom: 2rem;*/
 }
 
 /*.card {
@@ -382,7 +387,6 @@ hov:hover {
 
 .cabeceraBR {
     margin-top:1rem;
-    border: 1px solid red;
     text-align:center;
 }
 .cuadroTexto {
@@ -782,11 +786,10 @@ h2 {
     width: 100%;
     border-radius: 7px;
     box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
-    border:1px solid green;
 }
 
 #enviarComentario {
-    border: 1px solid red;
+    border: 1px solid #ff7500;
     margin: auto;
     text-align: center;
     background-color: #e3eff1;
@@ -821,17 +824,47 @@ h2 {
 }
 
 .imgUsuComentario {
+
+    border:2px solid #7d7d7d;
+
     width: 3rem;
+    height: 3rem;
+    max-width: 3rem;
+    max-width: 3rem;
+    border-radius:20%;
+}
+
+.iUC {
+    margin-top: 2rem;
+    width: 4rem;
+    height: 4rem;
+    max-width: 4rem;
+    max-width: 4rem;
+}
+
+.btnP {
+    margin-top: 0px;
+    margin-bottom: 1rem;;
 }
 
 #n {
-    margin:0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.comentario {
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #f5be77;
+    display: flex;
 }
 
 #cargarComentarios {
-    border: 1px solid yellow;
-    margin-bottom: 1rem;
+    border: 1px solid #ff7500;
     margin: auto;
+    margin-bottom: 3rem;
     background-color: #e3eff1;
     width: 75rem;
     border-radius: 12px;
@@ -839,4 +872,77 @@ h2 {
     text-align: left;
     padding-left: 1rem;
     padding-bottom: 2rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
 }
+
+.contenidoComentario {
+    border-left: 1px solid #f1a224;
+    margin-left: 1rem;
+    padding-left: 1rem;
+}
+
+
+
+/*******************PERFIL*************************/
+
+.titPerfil {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-top: 2rem;
+
+    margin-bottom:1rem;
+}
+
+.perfil-header {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    border-bottom: 1px solid #ffb339;
+}
+
+#imgPreviewPerfil {
+    min-width: 20rem;
+    max-width: 30rem;
+
+    min-height:20rem;
+    max-height:30rem;
+}
+
+
+#forImageUploaderPerfil {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #f1a224;
+    border-radius: 20%;
+}
+
+    #forImageUploaderPerfil:hover {
+        background-color: #f66302;
+    }
+
+#imageUploaderPerfil {
+    margin-bottom: 1rem;
+    display: none;
+    background-color: #ea8127;
+}
+
+#guardarImgPerfil {
+    margin-top:1.2rem;
+}
+
+#nombrePerfil {
+    
+}
+
+.contTit {
+    width: 40rem;
+    display: inline-block;
+
+    border-bottom: 1px solid #f1a224;
+}
+
+
+

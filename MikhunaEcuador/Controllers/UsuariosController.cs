@@ -19,6 +19,29 @@ namespace MikhunaEcuador.Controllers
         public static String Usu;
         public static int idUsu;
 
+        public string GetUrlImgUsuario() {
+            var usuario = db.Usuario.Find(idUsu);
+            if (usuario != null)
+            {
+                return usuario.Imagen;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public Usuario BuscarUsuario() {
+            var usuario = db.Usuario.Find(idUsu);
+            if (usuario != null)
+            {
+                return usuario;
+            }
+            else {
+                return null;
+            }
+        }
+
         public ActionResult GuardarImagenPerfil(string UrlImgPerfil) {
             if (UrlImgPerfil.CompareTo("") != 0) {
                 var Us = db.Usuario.Find(idUsu);
@@ -164,7 +187,7 @@ namespace MikhunaEcuador.Controllers
             ViewBag.Message = message;
             return View();
         }
-
+        [Authorize]
         public ActionResult Perfil()
         {
             var Usuario = db.Usuario.FirstOrDefault(e => e.UsuarioID == UsuariosController.idUsu);

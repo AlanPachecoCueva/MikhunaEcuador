@@ -14,7 +14,7 @@ namespace Mikhuna_Ecuador.Controllers
 
         private MikhunaDB db = new MikhunaDB();
 
-        //[Authorize]
+        [Authorize]
         // GET: Home
         public ActionResult Index( List<Receta> recetas)
         {

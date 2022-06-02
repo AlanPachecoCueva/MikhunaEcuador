@@ -337,3 +337,4 @@ C:\Users\Alan\Desktop\MikhunaEcuador\MikhunaEcuador\obj\Debug\MikhunaEcuador.csp
 C:\Users\Alan\Desktop\MikhunaEcuador\MikhunaEcuador\obj\Debug\MikhunaEcuador.csproj.CopyComplete
 C:\Users\Alan\Desktop\MikhunaEcuador\MikhunaEcuador\obj\Debug\MikhunaEcuador.dll
 C:\Users\Alan\Desktop\MikhunaEcuador\MikhunaEcuador\obj\Debug\MikhunaEcuador.pdb
+C:\Users\Alan\Desktop\MikhunaEcuador\MikhunaEcuador\obj\Debug\MikhunaEcuador.csproj.AssemblyReference.cache

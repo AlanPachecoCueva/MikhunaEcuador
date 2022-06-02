@@ -4,70 +4,52 @@
     ViewBag.Title = "Perfil";
 }
 
-<center><h1>Perfil</h1></center>
+
 
 <!--Hagan de aquí para abajo-->
 
 <html lang="en">
 
-<head>
-
-</head>
 <body>
 
     <div class="container">
         <div class="perfil-header">
+            <h1 class="titPerfil">Perfil</h1>
+
+
 
             <!--Carga La imagen-->
             <div class="perfil-img">
-                <img src="@Model.Imagen" >
-                <img  id="imgPreviewPerfil">
+                <img src="@Model.Imagen" id="imgPreviewPerfil">
             </div>
 
+            <!--Usuario-->
+            <div class="contTit">
+                <h1 id="nombrePerfil">@Model.NickName</h1>
+            </div>
+            
 
-            @Html.Label("Imagen")
             <div id="labelImg">
                 <label for="imageUploaderPerfil" id="forImageUploaderPerfil">Seleccionar archivo</label>
                 <input id="imageUploaderPerfil" class="inputsReceta" type="file" accept="image/png, .jpg, .jpeg, image/gif" name="archivitoPerfil">
             </div>
 
+            <!--Guardar-->
             <form action="/Usuarios/GuardarImagenPerfil" method="post">
-                <input id="UrlImgPerfil" type="hidden" name="UrlImgPerfil"/>
-                <input type="submit" value="Guardar"/>
+
+                <input id="UrlImgPerfil" type="hidden" name="UrlImgPerfil" />
+
+                <input id="guardarImgPerfil" class="btn btnH" type="submit" value="Guardar" />
             </form>
 
 
-
-            <div class="perfil-nav-info">
-                <h3 class="Nickname">
-                    Juan Calvopiña
-                </h3>
-                <div class="UsuarioID">
-                    1805290838
-                </div>
-                <p class="Correo">
-                    juan@udla.edu.ec
-                </p>
-                <span class="Nivel">
-                    Expert
-                </span>
-            </div>
-
-            <div class="perfil-opt">
-                <div class="Notificacion">
-                    <p class="fa fa-bell"></p>
-                    <span class="Mensaje-Alerta">1</span>
-                </div>
-            </div>
-
         </div>
+        </div>
+    </body>
 
-    </div>
-</body>
 
-
-</html>
-<script src="/Scripts/ImagenPerfil.js"></script>
+    </html>
+    <script src="/Scripts/ImagenPerfil.js"></script>
 
 
 

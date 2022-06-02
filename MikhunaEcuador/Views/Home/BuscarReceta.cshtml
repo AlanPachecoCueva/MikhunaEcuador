@@ -128,12 +128,12 @@
 
                 <div id="inputComentarioAbajo">
                     <div id="inputParteUsu">
-                        <img class="imgUsuComentario" src="~/Images/1.1.png" />
+                        <img class="imgUsuComentario iUC" src="@Html.Action("GetUrlImgUsuario", "Usuarios")" />
 
                         @{
                             if (User.Identity.IsAuthenticated)
                             {
-                                <h5>@Html.Action("GetSoloUsu", "Usuarios", new { htmlAttributes = new { id = "n" } }) </h5>
+                                <p>@Html.Action("GetSoloUsu", "Usuarios", new { htmlAttributes = new { id = "n" } }) </p>
                             }
 
                         }
@@ -141,7 +141,7 @@
                     </div>
 
                     <div id="inputCombtn">
-                        <button class="btnH btn">Enviar</button>
+                        <button class="btnH btn btnP">Enviar</button>
                     </div>
 
                 </div>
@@ -155,10 +155,10 @@
             {
                 <div class="comentario">
                     <div>
-                        <img class="imgUsuComentario" src="~/Images/1.1.png" />
+                        <img class="imgUsuComentario" src="@i.Usuario.Imagen" />
                         <h2>@i.Usuario.NickName</h2>
                     </div>
-                    <div>
+                    <div class="contenidoComentario">
                         <a>@i.Contenido</a>
                     </div>
                 </div>
