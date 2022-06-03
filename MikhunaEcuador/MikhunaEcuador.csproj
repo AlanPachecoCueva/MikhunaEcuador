@@ -164,6 +164,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CalificacionsController.cs" />
+    <Compile Include="Controllers\ComentariosController.cs" />
     <Compile Include="Controllers\FavoritosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IngredientesController.cs" />
@@ -176,6 +177,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Calificacion.cs" />
+    <Compile Include="Models\Comentario.cs" />
     <Compile Include="Models\Favoritos.cs" />
     <Compile Include="Models\Ingrediente.cs" />
     <Compile Include="Models\MikhunaDB.cs" />
@@ -235,6 +237,11 @@
     <Content Include="Views\Usuarios\Index.cshtml" />
     <Content Include="Views\Recetas\Create.cshtml" />
     <Content Include="Views\Usuarios\Perfil.cshtml" />
+    <Content Include="Views\Comentarios\Create.cshtml" />
+    <Content Include="Views\Comentarios\Delete.cshtml" />
+    <Content Include="Views\Comentarios\Details.cshtml" />
+    <Content Include="Views\Comentarios\Edit.cshtml" />
+    <Content Include="Views\Comentarios\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
