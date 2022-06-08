@@ -1,0 +1,113 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Views\Images\1.1.png" />
+    <None Remove="Views\Images\1.png" />
+    <None Remove="Views\Images\2.2.png" />
+    <None Remove="Views\Images\2.png" />
+    <None Remove="Views\Images\3.png" />
+    <None Remove="Views\Images\bacalaoConPapas.png" />
+    <None Remove="Views\Images\bannerComida.jpg" />
+    <None Remove="Views\Images\bannerComida2-1.jpg" />
+    <None Remove="Views\Images\bannerComida2.jpg" />
+    <None Remove="Views\Images\bannerComidaRe.png" />
+    <None Remove="Views\Images\candado.png" />
+    <None Remove="Views\Images\cazuelaDeMariscos.jpg" />
+    <None Remove="Views\Images\ceviche.jpg" />
+    <None Remove="Views\Images\ceviche2.jpg" />
+    <None Remove="Views\Images\cevicheCanchalagua.jpg" />
+    <None Remove="Views\Images\clasico.png" />
+    <None Remove="Views\Images\corroncho.jpg" />
+    <None Remove="Views\Images\corviche.jpg" />
+    <None Remove="Views\Images\encebollado.jpeg" />
+    <None Remove="Views\Images\encebollado.jpg" />
+    <None Remove="Views\Images\encocad.jpg" />
+    <None Remove="Views\Images\guanta.jpg" />
+    <None Remove="Views\Images\hornado.jpg" />
+    <None Remove="Views\Images\humita.jpg" />
+    <None Remove="Views\Images\humitas.jpg" />
+    <None Remove="Views\Images\humitas2.jpg" />
+    <None Remove="Views\Images\iniciar-sesion.png" />
+    <None Remove="Views\Images\llapingachos.jpg" />
+    <None Remove="Views\Images\locro.jpg" />
+    <None Remove="Views\Images\logoFinal.png" />
+    <None Remove="Views\Images\maito.jpg" />
+    <None Remove="Views\Images\mi.png" />
+    <None Remove="Views\Images\mikuna-logo.jpg" />
+    <None Remove="Views\Images\NewFile1.txt" />
+    <None Remove="Views\Images\persona.png" />
+    <None Remove="Views\Images\reloj2.png" />
+    <None Remove="Views\Images\reloj3.png" />
+    <None Remove="Views\Images\relojColor.png" />
+    <None Remove="Views\Images\sopaMarinera.png" />
+    <None Remove="Views\Images\uchu.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Views\Images\1.1.png" />
+    <Content Include="Views\Images\1.png" />
+    <Content Include="Views\Images\2.2.png" />
+    <Content Include="Views\Images\2.png" />
+    <Content Include="Views\Images\3.png" />
+    <Content Include="Views\Images\bacalaoConPapas.png" />
+    <Content Include="Views\Images\bannerComida.jpg" />
+    <Content Include="Views\Images\bannerComida2-1.jpg" />
+    <Content Include="Views\Images\bannerComida2.jpg" />
+    <Content Include="Views\Images\bannerComidaRe.png" />
+    <Content Include="Views\Images\candado.png" />
+    <Content Include="Views\Images\cazuelaDeMariscos.jpg" />
+    <Content Include="Views\Images\ceviche.jpg" />
+    <Content Include="Views\Images\ceviche2.jpg" />
+    <Content Include="Views\Images\cevicheCanchalagua.jpg" />
+    <Content Include="Views\Images\clasico.png" />
+    <Content Include="Views\Images\corroncho.jpg" />
+    <Content Include="Views\Images\corviche.jpg" />
+    <Content Include="Views\Images\encebollado.jpeg" />
+    <Content Include="Views\Images\encebollado.jpg" />
+    <Content Include="Views\Images\encocad.jpg" />
+    <Content Include="Views\Images\guanta.jpg" />
+    <Content Include="Views\Images\hornado.jpg" />
+    <Content Include="Views\Images\humita.jpg" />
+    <Content Include="Views\Images\humitas.jpg" />
+    <Content Include="Views\Images\humitas2.jpg" />
+    <Content Include="Views\Images\iniciar-sesion.png" />
+    <Content Include="Views\Images\llapingachos.jpg" />
+    <Content Include="Views\Images\locro.jpg" />
+    <Content Include="Views\Images\logoFinal.png" />
+    <Content Include="Views\Images\maito.jpg" />
+    <Content Include="Views\Images\mi.png" />
+    <Content Include="Views\Images\mikuna-logo.jpg" />
+    <Content Include="Views\Images\NewFile1.txt" />
+    <Content Include="Views\Images\persona.png" />
+    <Content Include="Views\Images\reloj2.png" />
+    <Content Include="Views\Images\reloj3.png" />
+    <Content Include="Views\Images\relojColor.png" />
+    <Content Include="Views\Images\sopaMarinera.png" />
+    <Content Include="Views\Images\uchu.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\BuscarReceta.xaml.cs">
+      <DependentUpon>BuscarReceta.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AgregarReceta.xaml.cs">
+      <DependentUpon>AgregarReceta.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Perfil.xaml.cs">
+      <DependentUpon>Perfil.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>
