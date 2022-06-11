@@ -4,10 +4,27 @@
              x:Class="MikhunaEcuador_XForms.App">
     <!--
         Define global resources and styles here, that apply to all pages in your app.
+        negro
+        rojo de M  (Mikhuna): #ff0800
+        txtMikhuna: #ff7500
+        Fondo: radial-gradient(#EDF2C4, #F2E0BD, #F5B15C)
+        verMas: #0000ff
+        eliminar: #ff0000
+        agregarReceta blancos: #e3eff1
+    
+        botones: 
+        box-shadow: 0px 0px 5px #f5b15c;
+        background-color: #f1a224;
+        font-family: 'Global User Interface';
+    
+        Hover botón: #f66302
+    
+    
+    
     -->
     <Application.Resources>
         <ResourceDictionary>
-            <Color x:Key="Primary">#2196F3</Color>
+            <Color x:Key="Primary">black</Color> <!--Setea el color primario-->
             <Style TargetType="Button">
                 <Setter Property="TextColor" Value="White"></Setter>
                 <Setter Property="VisualStateManager.VisualStateGroups">

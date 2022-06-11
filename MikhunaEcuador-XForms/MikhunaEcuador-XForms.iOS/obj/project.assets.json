@@ -998,11 +998,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alan\\Desktop\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.iOS\\MikhunaEcuador-XForms.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Alan\\Desktop\\Nuevo\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.iOS\\MikhunaEcuador-XForms.iOS.csproj",
       "projectName": "MikhunaEcuador-XForms.iOS",
-      "projectPath": "C:\\Users\\Alan\\Desktop\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.iOS\\MikhunaEcuador-XForms.iOS.csproj",
+      "projectPath": "C:\\Users\\Alan\\Desktop\\Nuevo\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.iOS\\MikhunaEcuador-XForms.iOS.csproj",
       "packagesPath": "C:\\Users\\Alan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alan\\Desktop\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.iOS\\obj\\",
+      "outputPath": "C:\\Users\\Alan\\Desktop\\Nuevo\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1025,8 +1025,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Alan\\Desktop\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.csproj": {
-              "projectPath": "C:\\Users\\Alan\\Desktop\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.csproj"
+            "C:\\Users\\Alan\\Desktop\\Nuevo\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.csproj": {
+              "projectPath": "C:\\Users\\Alan\\Desktop\\Nuevo\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.csproj"
             }
           }
         }

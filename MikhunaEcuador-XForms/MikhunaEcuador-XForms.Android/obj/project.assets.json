@@ -2149,11 +2149,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alan\\Desktop\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.Android\\MikhunaEcuador-XForms.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Alan\\Desktop\\Nuevo\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.Android\\MikhunaEcuador-XForms.Android.csproj",
       "projectName": "MikhunaEcuador-XForms.Android",
-      "projectPath": "C:\\Users\\Alan\\Desktop\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.Android\\MikhunaEcuador-XForms.Android.csproj",
+      "projectPath": "C:\\Users\\Alan\\Desktop\\Nuevo\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.Android\\MikhunaEcuador-XForms.Android.csproj",
       "packagesPath": "C:\\Users\\Alan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alan\\Desktop\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.Android\\obj\\",
+      "outputPath": "C:\\Users\\Alan\\Desktop\\Nuevo\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2176,8 +2176,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\Alan\\Desktop\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.csproj": {
-              "projectPath": "C:\\Users\\Alan\\Desktop\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.csproj"
+            "C:\\Users\\Alan\\Desktop\\Nuevo\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.csproj": {
+              "projectPath": "C:\\Users\\Alan\\Desktop\\Nuevo\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.csproj"
             }
           }
         }

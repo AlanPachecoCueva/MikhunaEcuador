@@ -7,15 +7,31 @@
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              ios:Page.UseSafeArea="true">
     <ContentPage.Content>
-        <StackLayout Spacing="3" Padding="15">
-            <Label Text="Text" FontSize="Medium" />
+        <StackLayout Spacing="3" Padding="15" BackgroundColor="#F5B15C">
+
+            <Label Text="Nueva Receta" FontSize="Title" TextColor="#A54E05" HorizontalTextAlignment="Center"/>
+
+            <Label Text="Nombre" TextColor="#A54E05" FontSize="Medium" HorizontalTextAlignment="Center"/>
             <Entry Text="{Binding Text, Mode=TwoWay}" FontSize="Medium" />
-            <Label Text="Description" FontSize="Medium" />
+
+            <Label Text="Duración (Minutos)" FontSize="Medium" TextColor="#A54E05" HorizontalTextAlignment="Center"/>
             <Editor Text="{Binding Description, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Medium" Margin="0" />
+
+            <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                <Label Text="Ceviche.png" FontSize="Medium" TextColor="#A54E05"/>
+                <Button Text="Examinar" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>
+            </StackLayout>
+            
+             
+            <Image Source="Ceviche"/>
+            
+            
             <StackLayout Orientation="Horizontal">
                 <Button Text="Cancel" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand"></Button>
                 <Button Text="Save" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>
             </StackLayout>
+            
+            
         </StackLayout>
     </ContentPage.Content>
     

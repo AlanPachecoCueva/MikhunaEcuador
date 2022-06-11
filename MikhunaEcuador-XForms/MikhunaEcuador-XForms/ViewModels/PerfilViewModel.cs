@@ -19,7 +19,7 @@ namespace MikhunaEcuador_XForms.ViewModels
 
         public PerfilViewModel()
         {
-            Title = "Browse";
+            Title = "Perfil";
             Items = new ObservableCollection<Item>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 

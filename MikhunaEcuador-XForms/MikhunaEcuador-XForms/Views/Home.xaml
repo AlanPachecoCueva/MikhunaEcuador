@@ -22,30 +22,33 @@
         
         <!--Setea las dimensiones de las filas (las medidas de ancho y alto)-->
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
+            <!--Esto elimina un borde blanco intermedio de las filas-->
+            <RowDefinition Height="136" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         
         
         <!--Acent es el color definido en la etiqueta Resources-->
-        <StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="Fill" >
             
             <!--Parte azul donde se muestra el logo de Xamarin-->
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-                <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
-                    <Image Source="bannerComida.jpg" VerticalOptions="Center" HeightRequest="64" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" >
+                <ContentView VerticalOptions="FillAndExpand">
+                    
+                    <!--Header Mikhuna-->
+                    <Image Source="bannerComida2" VerticalOptions="Center" WidthRequest="390" />
+                    
                 </ContentView>
             </StackLayout>
             
         </StackLayout>
-        
-        
-        
-        <ScrollView Grid.Row="1">
-            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
-                <Label Text="Start developing now" FontSize="Title"/>
-                <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="0,0,0,0"/>
-                <Label FontSize="16" Padding="0,24,0,0">
+
+
+
+        <ScrollView Grid.Row="1" BackgroundColor="#F5B15C">
+            <StackLayout Orientation="Vertical" Padding="50,24,50,24" Spacing="10">
+
+                <!--<Label FontSize="16" Padding="0,24,0,0">
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
@@ -54,12 +57,23 @@
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>
-                </Label>
-                <Button Margin="0,10,0,0" Text="Learn more"
+                </Label>-->
+                <Frame CornerRadius="10" Padding="0" Margin="0,0,0,15">
+                    <Image Source="ceviche"/>
+                </Frame>
+                <Frame CornerRadius="10" Padding="0" Margin="0,0,0,15">
+                    <Image Source="ceviche"/>
+                </Frame>
+                <Frame CornerRadius="10" Padding="0" Margin="0,0,0,15">
+                    <Image Source="ceviche"/>
+                </Frame>
+                
+                    <!--<Button Margin="0,10,0,0" Text="Ventana Home"
                         Command="{Binding OpenWebCommand}"
                         BackgroundColor="{StaticResource Primary}"
-                        TextColor="White" />
+                        TextColor="White" />-->
             </StackLayout>
+
         </ScrollView>
     </Grid>
 

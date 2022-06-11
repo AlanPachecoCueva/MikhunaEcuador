@@ -541,11 +541,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alan\\Desktop\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.csproj",
+      "projectUniqueName": "C:\\Users\\Alan\\Desktop\\Nuevo\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.csproj",
       "projectName": "MikhunaEcuador-XForms",
-      "projectPath": "C:\\Users\\Alan\\Desktop\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.csproj",
+      "projectPath": "C:\\Users\\Alan\\Desktop\\Nuevo\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.csproj",
       "packagesPath": "C:\\Users\\Alan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alan\\Desktop\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms\\obj\\",
+      "outputPath": "C:\\Users\\Alan\\Desktop\\Nuevo\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

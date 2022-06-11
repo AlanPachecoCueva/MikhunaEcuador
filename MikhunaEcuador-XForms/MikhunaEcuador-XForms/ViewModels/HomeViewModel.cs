@@ -9,7 +9,7 @@ namespace MikhunaEcuador_XForms.ViewModels
     {
         public HomeViewModel()
         {
-            Title = "About";
+            Title = "Mikhuna";
             OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
         }
 

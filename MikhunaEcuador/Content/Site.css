@@ -35,6 +35,10 @@ body {
     color: #ff0800;
 }
 
+.n {
+    margin-right: 4rem;
+}
+
 /*content está el _Layout*/
 .content {
     /*background-color: #F9F5DA;*/
@@ -754,9 +758,7 @@ h2 {
     
 }
 
-.n {
-    margin-right: 4rem;    
-}
+
 /*.Img_Div {                    PADRE
     margin-top: 25px;
     margin-bottom: 25px;
@@ -848,7 +850,7 @@ h2 {
 
 .btnP {
     margin-top: 0px;
-    margin-bottom: 1rem;;
+    margin-bottom: 1rem;
 }
 
 #n {
