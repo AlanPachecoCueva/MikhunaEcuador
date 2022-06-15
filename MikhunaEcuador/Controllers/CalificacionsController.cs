@@ -14,6 +14,61 @@ namespace MikhunaEcuador.Controllers
     {
         private MikhunaDB db = new MikhunaDB();
 
+        public ActionResult Calificar(int IDReceta, int Calificacion)
+        {
+
+            var califi = from a in db.Calificacion
+                         where a.RecetaID == IDReceta
+                         where a.UsuarioID == UsuariosController.idUsu
+                         select a;
+
+            var califica = califi.ToList();
+
+            if (califica.Count() == 0)
+            {
+                if (Calificacion > 0 && IDReceta != 0)
+                {
+                    db.Calificacion.Add(new Calificacion
+                    {
+                        NumeroEstrellas = Calificacion,
+                        RecetaID = IDReceta,
+                        UsuarioID = UsuariosController.idUsu
+
+                    });
+
+                    db.SaveChanges();
+                }
+            }
+            else
+            {
+                if (Calificacion > 0 && IDReceta != 0)
+                {
+
+                    if (califica != null)
+                    {
+                        califica.First().NumeroEstrellas = Calificacion;
+
+
+                        if (ModelState.IsValid)
+                        {
+
+                            db.Entry(califica.First()).State = EntityState.Modified;
+                            db.SaveChanges();
+
+                        }
+                    }
+                }
+
+
+
+
+            }
+
+
+            return RedirectToAction("BuscarReceta", "Home", new { id = Convert.ToInt32(IDReceta) });
+        }
+
+
         // GET: Calificacions
         public ActionResult Index()
         {

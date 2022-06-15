@@ -159,6 +159,7 @@
     <Content Include="Images\uchu.jpg" />
     <Content Include="Scripts\Imagen.js" />
     <Content Include="Scripts\ImagenPerfil.js" />
+    <Content Include="Scripts\JavaScript.js" />
     <Content Include="Scripts\script.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -192,35 +193,35 @@
     <Compile Include="ViewModel\RecetaViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\web.config" />
     <None Include="packages.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\BuscarReceta.cshtml" />
     <Content Include="Views\Calificacions\Create.cshtml" />
     <Content Include="Views\Calificacions\Delete.cshtml" />
     <Content Include="Views\Calificacions\Details.cshtml" />
     <Content Include="Views\Calificacions\Edit.cshtml" />
     <Content Include="Views\Calificacions\Index.cshtml" />
-    <Content Include="Views\Favoritos\Create.cshtml" />
-    <Content Include="Views\Favoritos\Delete.cshtml" />
-    <Content Include="Views\Favoritos\Details.cshtml" />
-    <Content Include="Views\Favoritos\Edit.cshtml" />
-    <Content Include="Views\Favoritos\Index.cshtml" />
-    <Content Include="Views\FavoritosUsuarios\Create.cshtml" />
-    <Content Include="Views\FavoritosUsuarios\Delete.cshtml" />
-    <Content Include="Views\FavoritosUsuarios\Details.cshtml" />
-    <Content Include="Views\FavoritosUsuarios\Edit.cshtml" />
-    <Content Include="Views\FavoritosUsuarios\Index.cshtml" />
-    <Content Include="Views\Usuarios\Login.cshtml" />
-    <Content Include="Views\Recetas\Create.cshtml" />
-    <Content Include="Views\Usuarios\Perfil.cshtml" />
     <Content Include="Views\Comentarios\Create.cshtml" />
     <Content Include="Views\Comentarios\Delete.cshtml" />
     <Content Include="Views\Comentarios\Details.cshtml" />
     <Content Include="Views\Comentarios\Edit.cshtml" />
     <Content Include="Views\Comentarios\Index.cshtml" />
+    <Content Include="Views\FavoritosUsuarios\Create.cshtml" />
+    <Content Include="Views\FavoritosUsuarios\Delete.cshtml" />
+    <Content Include="Views\FavoritosUsuarios\Details.cshtml" />
+    <Content Include="Views\FavoritosUsuarios\Edit.cshtml" />
+    <Content Include="Views\FavoritosUsuarios\Index.cshtml" />
+    <Content Include="Views\Favoritos\Create.cshtml" />
+    <Content Include="Views\Favoritos\Delete.cshtml" />
+    <Content Include="Views\Favoritos\Details.cshtml" />
+    <Content Include="Views\Favoritos\Edit.cshtml" />
+    <Content Include="Views\Favoritos\Index.cshtml" />
+    <Content Include="Views\Home\BuscarReceta.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Recetas\Create.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Usuarios\Login.cshtml" />
+    <Content Include="Views\Usuarios\Perfil.cshtml" />
+    <Content Include="Views\web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
