@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MikhunaEcuadorXForms.Views.BuscarReceta"
+             Title="BuscarReceta"
+             NavigationPage.HasNavigationBar="false">
+
+    <StackLayout BackgroundColor="#F5B15C">
+        <ScrollView>
+            <StackLayout>
+                <StackLayout Padding="0" Spacing="0">
+                <Image Source="Ceviche" WidthRequest="384"/>
+                <Frame Padding="0" BackgroundColor="#FF9300">
+                    <Label HorizontalOptions="Center" TextColor="#A54E05" FontAttributes="Bold" FontSize="30" Text="Ceviche"/>
+                </Frame>
+            </StackLayout>
+
+            <Label FontSize="25" HorizontalOptions="Center" Margin="20" TextColor="#A54E05" Text="Evalúa la receta"/>
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                <Label FontSize="30">★</Label>
+                <Label FontSize="30">★</Label>
+                <Label FontSize="30">★</Label>
+                <Label FontSize="30">★</Label>
+                <Label FontSize="30">★</Label>
+                </StackLayout>
+            </StackLayout>
+            
+
+        </ScrollView>
+        
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="60" BackgroundColor="#FF9300" VerticalOptions="EndAndExpand" Padding="60,5,60,5">
+            <Frame Padding="3,3,3,3" CornerRadius="30" BackgroundColor="#FF9300">
+                <ImageButton  Source="User" HorizontalOptions="Center" WidthRequest="50" Clicked="GoToProfile" BackgroundColor="#FF9300"/>
+            </Frame>
+            <Frame Padding="3,3,3,3"  CornerRadius="30" BackgroundColor="#FF9300">
+                <ImageButton Source="Home" HorizontalOptions="Center" WidthRequest="50" Clicked="GoToHome" BackgroundColor="#FF9300"/>
+            </Frame>
+            <Frame Padding="3,3,3,3" CornerRadius="30" BackgroundColor="#FF9300">
+                <ImageButton Source="AddFood" HorizontalOptions="Center" WidthRequest="50" Clicked="GoToAddFood" BackgroundColor="#FF9300"/>
+            </Frame>
+        </StackLayout>
+    </StackLayout>
+    
+</ContentPage>

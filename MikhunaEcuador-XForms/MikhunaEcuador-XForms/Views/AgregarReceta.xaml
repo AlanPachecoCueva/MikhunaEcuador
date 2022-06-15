@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Shell.PresentationMode="ModalAnimated"-->
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MikhunaEcuadorXForms.Views.AgregarReceta"
+             Title="Agregar Receta"
+             NavigationPage.HasNavigationBar="false">
+    
+    
+    <StackLayout Spacing="3"  BackgroundColor="#F5B15C">
+        <Grid>
+            <ScrollView>
+                <StackLayout Padding="15">
+                    <StackLayout>
+                        <Label Text="Nueva Receta" FontSize="Title" TextColor="#A54E05" HorizontalTextAlignment="Center"/>
+
+                        <Label Text="Nombre" TextColor="#A54E05" FontSize="Medium" HorizontalTextAlignment="Center"/>
+                        <Entry  FontSize="Medium" />
+                        <!--Text="{Binding Text, Mode=TwoWay}"-->
+
+                        <Label Text="Duración (Minutos)" FontSize="Medium" TextColor="#A54E05" HorizontalTextAlignment="Center"/>
+                        <Editor  AutoSize="TextChanges" FontSize="Medium" Margin="0" />
+                        <!--Text="{Binding Description, Mode=TwoWay}"-->
+
+                        <StackLayout Orientation="Horizontal">
+                            <Label VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Text="Ceviche.png" WidthRequest="200"  FontSize="Medium" BackgroundColor="White" TextColor="#A54E05"/>
+                            <Button CornerRadius="5" Text="Examinar"  BackgroundColor="#f1a224" HorizontalOptions="FillAndExpand"></Button>
+                            <!--Command="{Binding SaveCommand}"-->
+                        </StackLayout>
+
+
+                        <Image Source="Ceviche"/>
+
+                        <!--Command="{Binding CancelCommand}"-->
+                        <Button Margin="0,20" CornerRadius="10" Text="Crear"  HorizontalOptions="Center"  BackgroundColor="#f1a224" TextColor="#A54E05"></Button>
+                        <!--Command="{Binding SaveCommand}"-->
+
+                    </StackLayout>
+                    <BoxView BackgroundColor="#FF9300" HeightRequest="2" HorizontalOptions="Fill" />
+
+                    <!--Ingredientes-->
+                    <StackLayout>
+                        <Label Text="Ingredientes" FontSize="Title" TextColor="#A54E05" HorizontalTextAlignment="Center"/>
+
+                        <Label Text="Nombre Del Ingrediente" FontSize="Medium" TextColor="#A54E05" HorizontalTextAlignment="Center"/>
+                        <Editor  AutoSize="TextChanges" FontSize="Medium" Margin="0" />
+
+                        <Label Text="Cantidad" FontSize="Medium" TextColor="#A54E05" HorizontalTextAlignment="Center"/>
+                        <Editor  AutoSize="TextChanges" FontSize="Medium"/>
+
+                        <Button Margin="0,20" CornerRadius="10" Text="Agregar"  HorizontalOptions="Center"  BackgroundColor="#f1a224" TextColor="#A54E05"></Button>
+
+                    </StackLayout>
+                    <BoxView BackgroundColor="#FF9300" HeightRequest="2" HorizontalOptions="Fill" />
+                    
+                    <!--Pasos-->
+                    <StackLayout>
+                        <Label Text="Preparación" FontSize="Title" TextColor="#A54E05" HorizontalTextAlignment="Center"/>
+
+                        <Label Text="Pasos" FontSize="Medium" TextColor="#A54E05" HorizontalTextAlignment="Center"/>
+                        <Editor  AutoSize="TextChanges" FontSize="Medium" Margin="0" />
+
+                        <Button Margin="0,20" CornerRadius="10" Text="Agregar"  HorizontalOptions="Center"  BackgroundColor="#f1a224" TextColor="#A54E05"></Button>
+
+                    </StackLayout>
+                    <BoxView BackgroundColor="#FF9300" HeightRequest="2" HorizontalOptions="Fill" />
+
+                </StackLayout>
+
+
+                
+            </ScrollView>
+
+        </Grid>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="60" BackgroundColor="#FF9300" VerticalOptions="EndAndExpand" Padding="60,5,60,5">
+            <Frame Padding="3,3,3,3" CornerRadius="30" BackgroundColor="#FF9300">
+                <ImageButton  Source="User" HorizontalOptions="Center" WidthRequest="50" Clicked="GoToProfile" BackgroundColor="#FF9300"/>
+            </Frame>
+            <Frame Padding="3,3,3,3"  CornerRadius="30" BackgroundColor="#FF9300">
+                <ImageButton Source="Home" HorizontalOptions="Center" WidthRequest="50" Clicked="GoToHome" BackgroundColor="#FF9300"/>
+            </Frame>
+            <Frame Padding="3,3,3,3" CornerRadius="30" BackgroundColor="#FF9300">
+                <ImageButton Source="AddFood" HorizontalOptions="Center" WidthRequest="50" Clicked="GoToAddFood" BackgroundColor="#FF9300"/>
+            </Frame>
+        </StackLayout>
+    </StackLayout>
+    
+</ContentPage>

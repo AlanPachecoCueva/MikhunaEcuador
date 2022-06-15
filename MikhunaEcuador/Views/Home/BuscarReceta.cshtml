@@ -1,0 +1,217 @@
+﻿@model MikhunaEcuador.ViewModel.ImprimirRecetaViewModel
+
+@{
+    ViewBag.Title = "Receta";
+
+    var receta = Model.Receta;
+    var pasos = Model.Pasos;
+    var ingredientes = Model.Ingredientes;
+    var comentarios = Model.Comentarios;
+    var iterador = 0;
+    var calificacion = Model.Calificacion;
+
+}
+
+
+<div class="buscarReceta">
+    <div class="cabeceraBR">
+        <!--Imagen-->
+        <div class="imgBR">
+            <img id="img-banReceta" src="@receta.UrlImagen" />
+
+        </div>
+
+        <!--Título-->
+        <div class="fondo-texto">
+
+            <div id="nombreReceta">@receta.Nombre</div>
+
+
+        </div>
+
+        <!--Evaluar Receta-->
+        <div class="clasificacion">
+            <H3> Evalúa la receta</H3>
+
+
+            <form name="Clasi" action="~/Calificacions/Calificar" method="post">
+
+
+                @{ if (calificacion.NumeroEstrellas == -1)
+                    {
+
+                        <input id="radio1" type="radio" name="estrellas" value="5" />
+                        <label for="radio1">★</label>
+                        <input id="radio2" type="radio" name="estrellas" value="4" />
+                        <label for="radio2">★</label>
+                        <input id="radio3" type="radio" name="estrellas" value="3" />
+                        <label for="radio3">★</label>
+                        <input id="radio4" type="radio" name="estrellas" value="2" />
+                        <label for="radio4">★</label>
+                        <input id="radio5" type="radio" name="estrellas" value="1" />
+                        <label for="radio5">★</label>
+
+
+
+                    }
+                    else
+                    {
+                        <input id="radio1" type="radio" name="estrellas" value="5" checked="checked" />
+                        <label for="radio1">★</label>
+                        <input id="radio2" type="radio" name="estrellas" value="4" checked="checked" />
+                        <label for="radio2">★</label>
+                        <input id="radio3" type="radio" name="estrellas" value="3" checked="checked" />
+                        <label for="radio3">★</label>
+                        <input id="radio4" type="radio" name="estrellas" value="2" checked="checked" />
+                        <label for="radio4">★</label>
+                        <input id="radio5" type="radio" name="estrellas" value="1" checked="checked" />
+                        <label for="radio5">★</label>
+
+
+                    }
+
+
+
+                }
+
+                <br />
+                <br />  <input type="button" onclick="calificar(event)" value="Calificar" />
+
+                <input type="hidden" name="IDReceta" value="@receta.RecetaID" />
+                <input type="hidden" name="Calificacion" id="Cali" />
+
+
+            </form>
+
+            <p> 2 personas ya cocinaron este platillo</p>
+
+            <p> Total: 47 min | Preparacion: 14 min | Cocción: 33 min</p>
+            <p> Porciones: 10</p>
+            <p> Dificultad: Fácil</p>
+            <p> </p>
+
+
+        </div>
+    </div>
+
+    <!--Cuerpo abajo-->
+
+    <div class="cuerpoBR">
+
+        <!--INGREDIENTES-->
+        <div class="fondo-textoIngredientes">
+
+            <div class="ingredientes">
+
+                <center class="txtCentro">
+                    <b>
+                        Ingredientes: @ingredientes.Count()
+                    </b>
+                </center>
+
+                <form id="checks">
+                    @foreach (var i in ingredientes)
+                    {
+                        <div class="check">
+                            <label>
+                                <input type="checkbox" value="1" />@i.Unidad Unidades de @i.Nombre
+                            </label>
+                        </div>
+                    }
+                </form>
+
+            </div>
+
+        </div>
+
+        <!--Preparación-->
+        <div class="fondo-textoPreparacion">
+
+            <div class="preparacion">
+                <center class="txtCentro">
+                    <b>Preparación De @receta.Nombre</b>
+                </center>
+
+                @foreach (var i in pasos)
+                {
+                    iterador = iterador + 1;
+                    <div class="horizontal">
+                        @iterador
+                    </div>
+                    <p>
+                        @i.Paso
+                    </p>
+
+
+                }
+                @{
+                    iterador = 0;
+                }
+                <center>
+                    <p>INFORMACIÓN NUTRICIONAL </p>
+                    <p>292kcal = 1,223kj/por porción </p>
+                </center>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Comentar Receta-->
+
+    <div id="comentarios">
+
+
+        <div id="enviarComentario">
+            <center><h2 class="titPerfil">Ingresa un comentario!</h2></center>
+            <form action="/Comentarios/AgregarComentario" method="post">
+                <textarea type="text" id="inputComentario" name="comentario"></textarea>
+                <input type="hidden" name="i" value="@receta.RecetaID" />
+
+                <div id="inputComentarioAbajo">
+                    <div id="inputParteUsu">
+                        <img class="imgUsuComentario iUC" src="@Html.Action("GetUrlImgUsuario", "Usuarios")" />
+
+                        @{
+                            if (User.Identity.IsAuthenticated)
+                            {
+                                <p>@Html.Action("GetSoloUsu", "Usuarios", new { htmlAttributes = new { id = "n" } }) </p>
+                            }
+
+                        }
+
+                    </div>
+
+                    <div id="inputCombtn">
+                        <button class="btnH btn btnP">Enviar</button>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+
+
+        <div id="cargarComentarios">
+            @foreach (var i in comentarios)
+            {
+                <div class="comentario">
+                    <div>
+                        <img class="imgUsuComentario" src="@i.Usuario.Imagen" />
+                        <h2>@i.Usuario.NickName</h2>
+                    </div>
+                    <div class="contenidoComentario">
+                        <a>@i.Contenido</a>
+                    </div>
+                </div>
+            }
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<script src="~/Scripts/JavaScript.js"></script>

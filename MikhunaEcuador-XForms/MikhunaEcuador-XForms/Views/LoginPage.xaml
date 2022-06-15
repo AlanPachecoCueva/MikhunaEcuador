@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MikhunaEcuadorXForms.Views.LoginPage"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#F5B15C" Spacing="0">
+
+            <Label Margin="0,25" FontSize="40" HorizontalOptions="Center" Text="Mikhuna Ecuador" TextColor="#A54E05" />
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="0">
+                <Frame Padding="0" CornerRadius="10">
+                    <Button FontSize="16" Padding="32,25" Text="Iniciar Sesión" TextColor="#C88128"  BackgroundColor="#fff"/>
+
+                </Frame>
+                <Frame Padding="0" CornerRadius="10">
+                    <Button Clicked="GoToRegister" FontSize="16" Padding="31,25" Text="Registrarse" TextColor="#fff" BackgroundColor="#C88128"/>
+
+                </Frame>
+                
+                
+            </StackLayout>
+
+            <Frame Padding="0" BackgroundColor="#fff" Margin="20,-17" HasShadow="False" CornerRadius="15">
+                <StackLayout>
+
+                    <Image HorizontalOptions="Center" Source="LogoFinal" WidthRequest="200" Margin="0, 50"/>
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand"  Margin="0,0,10,0" >
+                        <Label VerticalOptions="Center" Text="Correo:" TextColor="#A54E05" FontSize="Medium" HorizontalTextAlignment="Center" />
+                        <Entry Keyboard="Email" FontSize="Medium" WidthRequest="220" BackgroundColor="#FFEDD7" TextColor="#764304"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="End" Margin="0,0,10,0" >
+                        <Label VerticalOptions="Center" Text="Contraseña:" HorizontalOptions="Fill" TextColor="#A54E05" FontSize="Medium" HorizontalTextAlignment="Center" />
+                        <Entry IsPassword="true" FontSize="Medium" WidthRequest="220" BackgroundColor="#FFEDD7" TextColor="#764304"/>
+
+                    </StackLayout>
+
+                    <Button Clicked="GoToHome" CornerRadius="5" Text="Iniciar Sesión" FontSize="21" BackgroundColor="#f1a224" Margin="70,40"></Button>
+
+
+
+                </StackLayout>
+            </Frame>
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
