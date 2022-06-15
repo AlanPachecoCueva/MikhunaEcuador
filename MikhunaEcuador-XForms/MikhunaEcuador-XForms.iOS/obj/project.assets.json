@@ -151,7 +151,7 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "MikhunaEcuador-XForms/1.0.0": {
+      "MikhunaEcuadorXForms/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -159,10 +159,10 @@
           "Xamarin.Forms": "5.0.0.2012"
         },
         "compile": {
-          "bin/placeholder/MikhunaEcuador-XForms.dll": {}
+          "bin/placeholder/MikhunaEcuadorXForms.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MikhunaEcuador-XForms.dll": {}
+          "bin/placeholder/MikhunaEcuadorXForms.dll": {}
         }
       }
     },
@@ -316,7 +316,7 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "MikhunaEcuador-XForms/1.0.0": {
+      "MikhunaEcuadorXForms/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -324,10 +324,10 @@
           "Xamarin.Forms": "5.0.0.2012"
         },
         "compile": {
-          "bin/placeholder/MikhunaEcuador-XForms.dll": {}
+          "bin/placeholder/MikhunaEcuadorXForms.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MikhunaEcuador-XForms.dll": {}
+          "bin/placeholder/MikhunaEcuadorXForms.dll": {}
         }
       }
     },
@@ -481,7 +481,7 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "MikhunaEcuador-XForms/1.0.0": {
+      "MikhunaEcuadorXForms/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -489,10 +489,10 @@
           "Xamarin.Forms": "5.0.0.2012"
         },
         "compile": {
-          "bin/placeholder/MikhunaEcuador-XForms.dll": {}
+          "bin/placeholder/MikhunaEcuadorXForms.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MikhunaEcuador-XForms.dll": {}
+          "bin/placeholder/MikhunaEcuadorXForms.dll": {}
         }
       }
     },
@@ -646,7 +646,7 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "MikhunaEcuador-XForms/1.0.0": {
+      "MikhunaEcuadorXForms/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -654,10 +654,10 @@
           "Xamarin.Forms": "5.0.0.2012"
         },
         "compile": {
-          "bin/placeholder/MikhunaEcuador-XForms.dll": {}
+          "bin/placeholder/MikhunaEcuadorXForms.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MikhunaEcuador-XForms.dll": {}
+          "bin/placeholder/MikhunaEcuadorXForms.dll": {}
         }
       }
     }
@@ -977,32 +977,32 @@
         "xamarin.forms.nuspec"
       ]
     },
-    "MikhunaEcuador-XForms/1.0.0": {
+    "MikhunaEcuadorXForms/1.0.0": {
       "type": "project",
-      "path": "../MikhunaEcuador-XForms/MikhunaEcuador-XForms.csproj",
-      "msbuildProject": "../MikhunaEcuador-XForms/MikhunaEcuador-XForms.csproj"
+      "path": "../MikhunaEcuador-XForms/MikhunaEcuadorXForms.csproj",
+      "msbuildProject": "../MikhunaEcuador-XForms/MikhunaEcuadorXForms.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
-      "MikhunaEcuador-XForms >= 1.0.0",
+      "MikhunaEcuadorXForms >= 1.0.0",
       "Xamarin.Essentials >= 1.6.1",
       "Xamarin.Forms >= 5.0.0.2012"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alan\\.nuget\\packages\\": {},
+    "C:\\Users\\josue\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alan\\Desktop\\Nuevo\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.iOS\\MikhunaEcuador-XForms.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\josue\\OneDrive\\Escritorio\\Nuevo\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.iOS\\MikhunaEcuador-XForms.iOS.csproj",
       "projectName": "MikhunaEcuador-XForms.iOS",
-      "projectPath": "C:\\Users\\Alan\\Desktop\\Nuevo\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.iOS\\MikhunaEcuador-XForms.iOS.csproj",
-      "packagesPath": "C:\\Users\\Alan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alan\\Desktop\\Nuevo\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.iOS\\obj\\",
+      "projectPath": "C:\\Users\\josue\\OneDrive\\Escritorio\\Nuevo\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.iOS\\MikhunaEcuador-XForms.iOS.csproj",
+      "packagesPath": "C:\\Users\\josue\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\josue\\OneDrive\\Escritorio\\Nuevo\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1010,7 +1010,7 @@
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Alan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\josue\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -1025,8 +1025,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Alan\\Desktop\\Nuevo\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.csproj": {
-              "projectPath": "C:\\Users\\Alan\\Desktop\\Nuevo\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms.csproj"
+            "C:\\Users\\josue\\OneDrive\\Escritorio\\Nuevo\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms\\MikhunaEcuadorXForms.csproj": {
+              "projectPath": "C:\\Users\\josue\\OneDrive\\Escritorio\\Nuevo\\MikhunaEcuador\\MikhunaEcuador-XForms\\MikhunaEcuador-XForms\\MikhunaEcuadorXForms.csproj"
             }
           }
         }

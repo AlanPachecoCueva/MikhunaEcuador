@@ -137,9 +137,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\MikhunaEcuador-XForms\MikhunaEcuador-XForms.csproj">
-      <Project>{725D92DF-C9F3-4F33-AE87-121B1F19FB15}</Project>
-      <Name>MikhunaEcuador-XForms</Name>
+    <ProjectReference Include="..\MikhunaEcuador-XForms\MikhunaEcuadorXForms.csproj">
+      <Project>{FA8F551A-D7F2-447C-B9D9-81403A6BC45D}</Project>
+      <Name>MikhunaEcuadorXForms</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

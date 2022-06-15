@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace MikhunaEcuador_XForms.Services
+namespace MikhunaEcuadorXForms.Services
 {
     public interface IDataStore<T>
     {

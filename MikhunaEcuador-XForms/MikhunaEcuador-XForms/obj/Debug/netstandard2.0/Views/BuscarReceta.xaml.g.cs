@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("MikhunaEcuador-XForms.Views.BuscarReceta.xaml", "Views/BuscarReceta.xaml", typeof(global::MikhunaEcuador_XForms.Views.ItemDetailPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("MikhunaEcuadorXForms.Views.BuscarReceta.xaml", "Views/BuscarReceta.xaml", typeof(global::MikhunaEcuadorXForms.Views.BuscarReceta))]
 
-namespace MikhunaEcuador_XForms.Views {
+namespace MikhunaEcuadorXForms.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\BuscarReceta.xaml")]
-    public partial class ItemDetailPage : global::Xamarin.Forms.ContentPage {
+    public partial class BuscarReceta : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ItemDetailPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(BuscarReceta));
         }
     }
 }

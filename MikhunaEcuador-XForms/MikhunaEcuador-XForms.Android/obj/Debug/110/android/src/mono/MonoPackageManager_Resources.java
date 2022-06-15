@@ -4,7 +4,7 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "MikhunaEcuador-XForms.Android.dll" comes first in this list. */
 		"MikhunaEcuador-XForms.Android.dll",
 		"FormsViewGroup.dll",
-		"MikhunaEcuador-XForms.dll",
+		"MikhunaEcuadorXForms.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.Annotation.Experimental.dll",

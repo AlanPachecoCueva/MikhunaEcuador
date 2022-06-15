@@ -1,15 +1,37 @@
-﻿using MikhunaEcuador_XForms.ViewModels;
-using System.ComponentModel;
-using Xamarin.Forms;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace MikhunaEcuador_XForms.Views
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace MikhunaEcuadorXForms.Views
 {
-    public partial class ItemDetailPage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class BuscarReceta : ContentPage
     {
-        public ItemDetailPage()
+        public BuscarReceta()
         {
             InitializeComponent();
-            BindingContext = new BuscarRecetaViewModel();
         }
+
+        async void GoToAddFood(Object e, EventArgs sender)
+        {
+            await Navigation.PushAsync(new AgregarReceta());
+
+        }
+        async void GoToProfile(Object e, EventArgs sender)
+        {
+            await Navigation.PushAsync(new Perfil());
+
+        }
+        async void GoToHome(Object e, EventArgs sender)
+        {
+            await Navigation.PushAsync(new Home());
+
+        }
+
     }
 }

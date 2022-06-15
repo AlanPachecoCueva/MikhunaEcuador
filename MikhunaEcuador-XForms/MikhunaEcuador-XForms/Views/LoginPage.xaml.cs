@@ -1,13 +1,14 @@
-﻿using MikhunaEcuador_XForms.ViewModels;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace MikhunaEcuador_XForms.Views
+namespace MikhunaEcuadorXForms.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
@@ -15,7 +16,19 @@ namespace MikhunaEcuador_XForms.Views
         public LoginPage()
         {
             InitializeComponent();
-            this.BindingContext = new LoginViewModel();
         }
+
+        async void GoToRegister(Object e, EventArgs sender)
+        {
+            await Navigation.PushAsync(new RegisterPage());
+
+        }
+
+        async void GoToHome(Object e, EventArgs sender)
+        {
+            await Navigation.PushAsync(new Home());
+
+        }
+
     }
 }

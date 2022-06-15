@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("MikhunaEcuador-XForms.Views.LoginPage.xaml", "Views/LoginPage.xaml", typeof(global::MikhunaEcuador_XForms.Views.LoginPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("MikhunaEcuadorXForms.Views.LoginPage.xaml", "Views/LoginPage.xaml", typeof(global::MikhunaEcuadorXForms.Views.LoginPage))]
 
-namespace MikhunaEcuador_XForms.Views {
+namespace MikhunaEcuadorXForms.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\LoginPage.xaml")]

@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("MikhunaEcuador-XForms.Views.AgregarReceta.xaml", "Views/AgregarReceta.xaml", typeof(global::MikhunaEcuador_XForms.Views.NewItemPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("MikhunaEcuadorXForms.Views.AgregarReceta.xaml", "Views/AgregarReceta.xaml", typeof(global::MikhunaEcuadorXForms.Views.AgregarReceta))]
 
-namespace MikhunaEcuador_XForms.Views {
+namespace MikhunaEcuadorXForms.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\AgregarReceta.xaml")]
-    public partial class NewItemPage : global::Xamarin.Forms.ContentPage {
+    public partial class AgregarReceta : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(NewItemPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(AgregarReceta));
         }
     }
 }

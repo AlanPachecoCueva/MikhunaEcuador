@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MikhunaEcuador_XForms.Models
+namespace MikhunaEcuadorXForms.Models
 {
     public class Item
     {

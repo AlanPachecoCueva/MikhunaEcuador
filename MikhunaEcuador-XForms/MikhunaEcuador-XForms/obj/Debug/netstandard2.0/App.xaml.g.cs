@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("MikhunaEcuador-XForms.App.xaml", "App.xaml", typeof(global::MikhunaEcuador_XForms.App))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("MikhunaEcuadorXForms.App.xaml", "App.xaml", typeof(global::MikhunaEcuadorXForms.App))]
 
-namespace MikhunaEcuador_XForms {
+namespace MikhunaEcuadorXForms {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("App.xaml")]

@@ -1,20 +1,22 @@
-﻿using MikhunaEcuador_XForms.Services;
-using MikhunaEcuador_XForms.Views;
+﻿
+//Para usar las views creadas
+using MikhunaEcuadorXForms.Views;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace MikhunaEcuador_XForms
+namespace MikhunaEcuadorXForms
 {
     public partial class App : Application
     {
-
         public App()
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
-            MainPage = new AppShell();
+            //Es la primera página que se renderiza
+
+            //La navigation Page me permite guardar en una pila
+            MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart()

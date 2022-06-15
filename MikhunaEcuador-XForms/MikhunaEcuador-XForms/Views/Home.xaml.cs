@@ -1,15 +1,39 @@
 ﻿using System;
-using System.ComponentModel;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace MikhunaEcuador_XForms.Views
+namespace MikhunaEcuadorXForms.Views
 {
-    public partial class AboutPage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Home : ContentPage
     {
-        public AboutPage()
+        public Home()
         {
             InitializeComponent();
         }
+
+        //Navegación entre pestañas (footer)
+        async void GoToAddFood(Object e, EventArgs sender) {
+            await Navigation.PushAsync(new AgregarReceta());
+
+        } 
+        async void GoToProfile(Object e, EventArgs sender) {
+            await Navigation.PushAsync(new Perfil());
+
+        } 
+        async void GoToHome(Object e, EventArgs sender) {
+            await Navigation.PushAsync(new Home());
+
+        } 
+        
+        async void GoToBuscarReceta(Object e, EventArgs sender) {
+            await Navigation.PushAsync(new BuscarReceta());
+
+        } 
     }
 }

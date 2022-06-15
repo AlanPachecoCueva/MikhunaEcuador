@@ -5,11 +5,9 @@ VisualStudioVersion = 16.0.32413.511
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MikhunaEcuador", "MikhunaEcuador\MikhunaEcuador.csproj", "{AB26705E-49C9-4A03-B29A-7568F8C8FF16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MikhunaEcuador-XForms.Android", "MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\MikhunaEcuador-XForms.Android.csproj", "{84972AC8-51F7-418E-A8AB-16D407D2F9D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MikhunaEcuadorXForms.Android", "MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\MikhunaEcuadorXForms.Android.csproj", "{84972AC8-51F7-418E-A8AB-16D407D2F9D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MikhunaEcuador-XForms.iOS", "MikhunaEcuador-XForms\MikhunaEcuador-XForms.iOS\MikhunaEcuador-XForms.iOS.csproj", "{0F8C8B61-5FEB-4A4C-9329-1598B8BDA462}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MikhunaEcuador-XForms", "MikhunaEcuador-XForms\MikhunaEcuador-XForms\MikhunaEcuador-XForms.csproj", "{FA8F551A-D7F2-447C-B9D9-81403A6BC45D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MikhunaEcuadorXForms", "MikhunaEcuador-XForms\MikhunaEcuador-XForms\MikhunaEcuadorXForms.csproj", "{FA8F551A-D7F2-447C-B9D9-81403A6BC45D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,16 +49,6 @@ Global
 		{84972AC8-51F7-418E-A8AB-16D407D2F9D0}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{84972AC8-51F7-418E-A8AB-16D407D2F9D0}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{84972AC8-51F7-418E-A8AB-16D407D2F9D0}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
-		{0F8C8B61-5FEB-4A4C-9329-1598B8BDA462}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
-		{0F8C8B61-5FEB-4A4C-9329-1598B8BDA462}.Debug|iPhone.ActiveCfg = Debug|iPhone
-		{0F8C8B61-5FEB-4A4C-9329-1598B8BDA462}.Debug|iPhone.Build.0 = Debug|iPhone
-		{0F8C8B61-5FEB-4A4C-9329-1598B8BDA462}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
-		{0F8C8B61-5FEB-4A4C-9329-1598B8BDA462}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
-		{0F8C8B61-5FEB-4A4C-9329-1598B8BDA462}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
-		{0F8C8B61-5FEB-4A4C-9329-1598B8BDA462}.Release|iPhone.ActiveCfg = Release|iPhone
-		{0F8C8B61-5FEB-4A4C-9329-1598B8BDA462}.Release|iPhone.Build.0 = Release|iPhone
-		{0F8C8B61-5FEB-4A4C-9329-1598B8BDA462}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
-		{0F8C8B61-5FEB-4A4C-9329-1598B8BDA462}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{FA8F551A-D7F2-447C-B9D9-81403A6BC45D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FA8F551A-D7F2-447C-B9D9-81403A6BC45D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA8F551A-D7F2-447C-B9D9-81403A6BC45D}.Debug|iPhone.ActiveCfg = Debug|Any CPU
