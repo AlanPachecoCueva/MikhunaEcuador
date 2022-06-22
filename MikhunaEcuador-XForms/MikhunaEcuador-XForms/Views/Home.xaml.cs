@@ -35,5 +35,9 @@ namespace MikhunaEcuadorXForms.Views
             await Navigation.PushAsync(new BuscarReceta());
 
         } 
+        async void GoToLogin(Object e, EventArgs sender) {
+            await Navigation.PushAsync(new LoginPage());
+
+        } 
     }
 }

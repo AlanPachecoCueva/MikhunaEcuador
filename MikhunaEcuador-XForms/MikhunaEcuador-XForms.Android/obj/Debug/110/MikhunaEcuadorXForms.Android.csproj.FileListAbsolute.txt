@@ -54,12 +54,11 @@ C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\Mi
 C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\mipmap-xxhdpi\launcher_foreground.png
 C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\mipmap-xxxhdpi\icon.png
 C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\mipmap-xxxhdpi\launcher_foreground.png
+C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\enviar.png
 C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\reloj2.png
 C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\reloj3.png
 C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\relojcolor.png
-C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\user.png
 C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\xamarin_logo.png
-C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\addfood.png
 C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\adduser.png
 C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\alan.jpeg
 C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\bannercomida.jpg
@@ -67,9 +66,6 @@ C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\Mi
 C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\candado.png
 C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\ceviche.jpg
 C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\clasico.png
-C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\exit.png
-C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\exituser.png
-C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\home.png
 C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\icon_about.png
 C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\icon_feed.png
 C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\iniciarsesion.png
@@ -77,6 +73,13 @@ C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\Mi
 C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\mi.png
 C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\mikunalogo.jpg
 C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\persona.png
+C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\juan.jpg
+C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\chris.jpg
+C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\addfood.png
+C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\home.png
+C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\user.png
+C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\exit.png
+C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\res\drawable\exituser.png
 C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\uploadflags.txt
 C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\resolvedassemblies.hash
 C:\Users\josue\OneDrive\Escritorio\Nuevo\MikhunaEcuador\MikhunaEcuador-XForms\MikhunaEcuador-XForms.Android\obj\Debug\110\android\assets\FormsViewGroup.dll

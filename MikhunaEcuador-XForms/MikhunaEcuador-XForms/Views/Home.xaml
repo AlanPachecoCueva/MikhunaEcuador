@@ -18,7 +18,25 @@
     </ContentPage.Resources>-->
 
     <!--Tipo de vista tipo tabla GRID-->
+    
     <StackLayout Spacing="0">
+
+        <StackLayout HeightRequest="60" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" BackgroundColor="#683A1C" VerticalOptions="EndAndExpand" Spacing="60">
+            <Frame HasShadow="False" WidthRequest="80" Padding="0" BackgroundColor="#683A1C">
+                <ImageButton BackgroundColor="#683A1C"/>
+            </Frame>
+            <Frame  HasShadow="False" WidthRequest="100" Padding="0">
+                <!--<Label HorizontalOptions="Center" WidthRequest="150" Text="Home" Padding="160,0,0,0" TextColor="#fff" FontAttributes="Bold" FontSize="40"  VerticalTextAlignment="Center"/>-->
+
+                <Label BackgroundColor="#683A1C" Text="Home" FontSize="25" TextColor="#F0A15F" FontAttributes="Bold"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+             </Frame>
+            <Frame  HasShadow="False" WidthRequest="80" BackgroundColor="#683A1C" Padding="0">
+                <ImageButton HorizontalOptions="End" Source="ExitUser" Padding="10,0,10,0" WidthRequest="50" Clicked="GoToLogin" BackgroundColor="#683A1C"/>
+            </Frame>
+        </StackLayout>
+        
+
+
         <!--<Grid>-->
 
             <!--Setea las dimensiones de las filas (las medidas de ancho y alto)-->
@@ -83,15 +101,15 @@
 
             </ScrollView>
         <!--</Grid>-->
-        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="60" BackgroundColor="#FF9300" VerticalOptions="EndAndExpand" Padding="60,5,60,5">
-            <Frame Padding="3,3,3,3" CornerRadius="30" BackgroundColor="#FF9300">
-                <ImageButton  Source="User" HorizontalOptions="Center" WidthRequest="50" Clicked="GoToProfile" BackgroundColor="#FF9300"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="60" BackgroundColor="#683A1C" VerticalOptions="EndAndExpand" Padding="60,5,60,5">
+            <Frame Padding="3,3,3,3" CornerRadius="30" BackgroundColor="#683A1C">
+                <ImageButton  Source="User" HorizontalOptions="Center" WidthRequest="50" Clicked="GoToProfile" BackgroundColor="#683A1C"/>
             </Frame>
-            <Frame Padding="3,3,3,3"  CornerRadius="30" BackgroundColor="#FF9300">
-                <ImageButton Source="Home" HorizontalOptions="Center" WidthRequest="50" Clicked="GoToHome" BackgroundColor="#FF9300"/>
+            <Frame Padding="3,3,3,3"  CornerRadius="30" BackgroundColor="#683A1C">
+                <ImageButton Source="Home" HorizontalOptions="Center" WidthRequest="50" Clicked="GoToHome" BackgroundColor="#683A1C"/>
             </Frame>
-            <Frame Padding="3,3,3,3" CornerRadius="30" BackgroundColor="#FF9300">
-                <ImageButton Source="AddFood" HorizontalOptions="Center" WidthRequest="50" Clicked="GoToAddFood" BackgroundColor="#FF9300"/>
+            <Frame Padding="3,3,3,3" CornerRadius="30" BackgroundColor="#683A1C">
+                <ImageButton Source="AddFood" HorizontalOptions="Center" WidthRequest="50" Clicked="GoToAddFood" BackgroundColor="#683A1C"/>
             </Frame>
         </StackLayout>
 

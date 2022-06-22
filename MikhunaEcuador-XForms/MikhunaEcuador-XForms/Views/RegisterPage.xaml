@@ -6,15 +6,22 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="#F5B15C" Spacing="0">
 
-            <Label Margin="0,25" FontSize="40" HorizontalOptions="Center" Text="Mikhuna Ecuador" TextColor="#A54E05" />
-
+            <Label Margin="0,0,0,40"
+                   Padding="36,10,36,10"
+                   FontSize="40" 
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold" 
+                   Text="Mikhuna Ecuador" 
+                   TextColor="#F0A15F" 
+                   BackgroundColor="#683A1C"/>
+            
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="0">
                 <Frame Padding="0" CornerRadius="10">
-                    <Button Clicked="GoToLogin" FontSize="16" Padding="32,25" Text="Iniciar Sesión" TextColor="#fff" BackgroundColor="#C88128"/>
+                    <Button Clicked="GoToLogin" FontSize="16" FontAttributes="Bold" Padding="30,25" Text="Iniciar Sesión" TextColor="#fff" BackgroundColor="#683A1C"/>
 
                 </Frame>
                 <Frame Padding="0" CornerRadius="10">
-                    <Button FontSize="16" Padding="31,25" Text="Registrarse" TextColor="#C88128"  BackgroundColor="#fff"/>
+                    <Button FontSize="16" Padding="30,25" Text="Registrarse" FontAttributes="Bold" TextColor="#683A1C"  BackgroundColor="#fff"/>
 
                 </Frame>
 
@@ -42,8 +49,16 @@
 
                     </StackLayout>
 
-                    <Button Clicked="GoToHome" CornerRadius="5" Text="Registrar" FontSize="21" BackgroundColor="#f1a224" Margin="70,40"></Button>
-
+                    <Button Clicked="GoToHome" 
+                            Text="Registrar" 
+                            Margin="30,40,30,40" 
+                            HorizontalOptions="FillAndExpand"
+                            CornerRadius="10" 
+                            Padding="0" 
+                            FontSize="20" 
+                            FontAttributes="Bold" 
+                            TextColor="#fff" 
+                            BackgroundColor="#683A1C"/>
 
 
                 </StackLayout>

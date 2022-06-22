@@ -32,5 +32,11 @@ namespace MikhunaEcuadorXForms.Views
             await Navigation.PushAsync(new Home());
 
         }
+
+        async void GoToLogin(Object e, EventArgs sender)
+        {
+            await Navigation.PushAsync(new LoginPage());
+
+        }
     }
 }
