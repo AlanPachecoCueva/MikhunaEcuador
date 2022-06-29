@@ -9,6 +9,7 @@ namespace MikhunaEcuador.Models
     {
         [Key]
         public int FavoritosID { get; set; }
+        public int Calificacion { get; set; }
 
         public virtual int RecetaID { get; set; }
 
@@ -18,6 +19,5 @@ namespace MikhunaEcuador.Models
         public virtual int UsuarioID { get; set; }
 
         [ForeignKey("UsuarioID")]
-        public Usuario Usuario { get; set; }
-    }
+        public Usuario Usuario { get; set; }    }
 }
