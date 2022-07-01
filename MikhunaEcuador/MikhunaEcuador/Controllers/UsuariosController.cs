@@ -247,7 +247,6 @@ namespace MikhunaEcuador.Controllers
                     }
                 }
             }
-
             return RedirectToAction("Perfil");
 
 

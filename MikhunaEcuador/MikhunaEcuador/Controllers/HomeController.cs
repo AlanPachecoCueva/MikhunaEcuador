@@ -17,25 +17,37 @@ namespace Mikhuna_Ecuador.Controllers
 
         [Authorize]
         // GET: Home
-        public ActionResult Index( List<Receta> recetas)
+        public ActionResult Index( String Nombre)
         {
-            if (recetas != null) {
-                return View(recetas);
+            if (Nombre != null) {
+
+                var receta = from b in db.Receta
+                             where b.Nombre.Contains(Nombre)
+                             select b;
+
+                return View(receta.ToList());
             }
             return View(db.Receta.ToList());
         }
+
+
 
         [HttpPost]
         public ActionResult BuscarNombreReceta(string Nombre) {
             if (Nombre != null) {
                 var receta = from b in db.Receta
-                                   where b.Nombre.CompareTo(Nombre) == 0
+                                   where b.Nombre.Contains(Nombre) 
                                    select b;
+
+
 
                 return RedirectToAction("Index", new { recetas = receta.ToList()});
             }
             return RedirectToAction("Index");
         }
+
+
+
 
         public ActionResult BuscarReceta(int id)
         {
@@ -57,7 +69,7 @@ namespace Mikhuna_Ecuador.Controllers
                                        where b.UsuarioID == UsuariosController.idUsu
                                        where b.RecetaID == id
                                        select b;
-                     
+
 
                     Calificacion calific = calificacion.FirstOrDefault();
                     if (calific == null)
