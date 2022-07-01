@@ -19,5 +19,8 @@ namespace MikhunaEcuador.ViewModel
 
         //Comentarios
         public IList<Comentario> Comentarios { get; set; }
+
+
+        public Calificacion Calificacion { get; set; }
     }
 }

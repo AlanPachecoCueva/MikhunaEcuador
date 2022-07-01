@@ -240,7 +240,6 @@ namespace MikhunaEcuador.Controllers
 
                     if (ModelState.IsValid)
                     {
-
                         FormsAuthentication.SetAuthCookie(Us.NickName, false);
                         db.Entry(Us).State = EntityState.Modified;
                         db.SaveChanges();
@@ -248,6 +247,7 @@ namespace MikhunaEcuador.Controllers
                     }
                 }
             }
+
             return RedirectToAction("Perfil");
 
 

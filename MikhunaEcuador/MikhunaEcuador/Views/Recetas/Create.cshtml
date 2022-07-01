@@ -26,7 +26,7 @@
             </div>
 
             @Html.LabelFor(model => model.Duracion)
-            <div>
+            <div class="">
                 @Html.EditorFor(model => model.Duracion, new { htmlAttributes = new { @class = "inputsReceta", @name = "Duracion" } })
                 @Html.ValidationMessageFor(model => model.Duracion, "")
             </div>

@@ -12,14 +12,18 @@ namespace MikhunaEcuador.Models
 
         [Required]
         [StringLength(50, MinimumLength = 2)]
-        [RegularExpression("^[a-zA-Z ]*$", ErrorMessage = "Debe ingresar solo letras")]
+        [RegularExpression("^[a-zA-ZÀ-ÿ\u00f1\u00d1]+$", ErrorMessage = "Debe ingresar solo letras")]
+
         public string Nombre { get; set; }
 
         [Required]
-        [RegularExpression("^[0-9]*$", ErrorMessage = "Debe ingresar solo números")]
+        [RegularExpression("^[0-60]*$", ErrorMessage = "Debe ingresar solo números")]
+
+        [StringLength(100)]
         public float Duracion { get; set; }
 
-        [StringLength(400)]
+             
+        
         public string UrlImagen { get; set; }
 
         public float CalificacionPromedio { get; set; } //Cambiar para que calcule con las calificaciones

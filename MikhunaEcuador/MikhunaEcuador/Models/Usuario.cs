@@ -12,8 +12,10 @@ namespace MikhunaEcuador.Models
 
         [Required]
         [StringLength(50, MinimumLength = 2)]
-        [RegularExpression("^[a-zA-Z ]*$", ErrorMessage = "Debe ingresar sol" +
-            "o letras.")]
+        //[RegularExpression("^[a-zA-Z ]*$", ErrorMessage = "Debe ingresar sol" +
+        //    "o letras.")]
+
+        [RegularExpression("^[a-zA-ZÀ-ÿ\u00f1\u00d1]+$", ErrorMessage ="Debe ingresar letras")]
         public string NickName { get; set; }
 
         [Required]

@@ -1,4 +1,5 @@
-﻿using MikhunaEcuador.Models;
+﻿using MikhunaEcuador.Controllers;
+using MikhunaEcuador.Models;
 using MikhunaEcuador.ViewModel;
 using System;
 using System.Collections.Generic;
@@ -52,12 +53,33 @@ namespace Mikhuna_Ecuador.Controllers
                                       where b.RecetaID == id
                                       select b;
 
+                    var calificacion = from b in db.Calificacion
+                                       where b.UsuarioID == UsuariosController.idUsu
+                                       where b.RecetaID == id
+                                       select b;
+                     
+
+                    Calificacion calific = calificacion.FirstOrDefault();
+                    if (calific == null)
+                    {
+                        calific = new Calificacion
+                        {
+                            NumeroEstrellas = -1
+                        };
+                    }
+
+
+
                     var aux = new ImprimirRecetaViewModel
                     {
                         Receta = receta,
                         Ingredientes = ingredientes.ToList(),
                         Pasos = pasos.ToList(),
-                        Comentarios = comentarios.ToList()
+                        Comentarios = comentarios.ToList(),
+                        Calificacion = calific
+
+
+
                     };
 
 

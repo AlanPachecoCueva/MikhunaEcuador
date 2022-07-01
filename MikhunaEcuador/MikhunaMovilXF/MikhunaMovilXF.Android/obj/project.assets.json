@@ -2179,18 +2179,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\josue\\.nuget\\packages\\": {},
+    "C:\\Users\\crisa\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\josue\\OneDrive\\Escritorio\\Nuevo\\MikhunaEcuador\\MikhunaMovilXF\\MikhunaMovilXF.Android\\MikhunaMovilXF.Android.csproj",
+      "projectUniqueName": "C:\\Users\\crisa\\Desktop\\WebProgra\\MikhunaEcuador\\MikhunaEcuador\\MikhunaMovilXF\\MikhunaMovilXF.Android\\MikhunaMovilXF.Android.csproj",
       "projectName": "MikhunaMovilXF.Android",
-      "projectPath": "C:\\Users\\josue\\OneDrive\\Escritorio\\Nuevo\\MikhunaEcuador\\MikhunaMovilXF\\MikhunaMovilXF.Android\\MikhunaMovilXF.Android.csproj",
-      "packagesPath": "C:\\Users\\josue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\josue\\OneDrive\\Escritorio\\Nuevo\\MikhunaEcuador\\MikhunaMovilXF\\MikhunaMovilXF.Android\\obj\\",
+      "projectPath": "C:\\Users\\crisa\\Desktop\\WebProgra\\MikhunaEcuador\\MikhunaEcuador\\MikhunaMovilXF\\MikhunaMovilXF.Android\\MikhunaMovilXF.Android.csproj",
+      "packagesPath": "C:\\Users\\crisa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\crisa\\Desktop\\WebProgra\\MikhunaEcuador\\MikhunaEcuador\\MikhunaMovilXF\\MikhunaMovilXF.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2198,7 +2198,7 @@
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\josue\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\crisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -2213,8 +2213,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\josue\\OneDrive\\Escritorio\\Nuevo\\MikhunaEcuador\\MikhunaMovilXF\\MikhunaMovilXF\\MikhunaMovilXF.csproj": {
-              "projectPath": "C:\\Users\\josue\\OneDrive\\Escritorio\\Nuevo\\MikhunaEcuador\\MikhunaMovilXF\\MikhunaMovilXF\\MikhunaMovilXF.csproj"
+            "C:\\Users\\crisa\\Desktop\\WebProgra\\MikhunaEcuador\\MikhunaEcuador\\MikhunaMovilXF\\MikhunaMovilXF\\MikhunaMovilXF.csproj": {
+              "projectPath": "C:\\Users\\crisa\\Desktop\\WebProgra\\MikhunaEcuador\\MikhunaEcuador\\MikhunaMovilXF\\MikhunaMovilXF\\MikhunaMovilXF.csproj"
             }
           }
         }
