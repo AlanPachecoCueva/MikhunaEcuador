@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EHUyfB9mdcEwBJ5sBk36wGDFpDVXqGz5ebTFnexBIAjewLY0y4idiGi8EqDu8231YwMrDBIxQpQZQAGjRy6ddw==",
+  "dgSpecHash": "BJNWO9BOXHx7rsTySj2oZl4C15nvVNqbZRzxinun5w9Dfnp3+6vq5kwXQc0cyImU+UC6SASaxONdvy/CS78guw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\josue\\OneDrive\\Escritorio\\Nuevo\\MikhunaEcuador\\MikhunaMovilXF\\MikhunaMovilXF.UWP\\MikhunaMovilXF.UWP.csproj",
+  "projectFilePath": "C:\\Users\\josue\\OneDrive\\Escritorio\\Proyecto Progra\\MikhunaEcuador\\MikhunaEcuador\\MikhunaMovilXF\\MikhunaMovilXF.UWP\\MikhunaMovilXF.UWP.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.10-rel-29722-00\\microsoft.net.native.compiler.2.2.10-rel-29722-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.12\\microsoft.net.uwpcoreruntimesdk.2.2.12.nupkg.sha512",

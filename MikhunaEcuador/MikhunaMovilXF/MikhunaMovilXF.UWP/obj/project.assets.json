@@ -9168,11 +9168,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\josue\\OneDrive\\Escritorio\\Nuevo\\MikhunaEcuador\\MikhunaMovilXF\\MikhunaMovilXF.UWP\\MikhunaMovilXF.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\josue\\OneDrive\\Escritorio\\Proyecto Progra\\MikhunaEcuador\\MikhunaEcuador\\MikhunaMovilXF\\MikhunaMovilXF.UWP\\MikhunaMovilXF.UWP.csproj",
       "projectName": "MikhunaMovilXF.UWP",
-      "projectPath": "C:\\Users\\josue\\OneDrive\\Escritorio\\Nuevo\\MikhunaEcuador\\MikhunaMovilXF\\MikhunaMovilXF.UWP\\MikhunaMovilXF.UWP.csproj",
+      "projectPath": "C:\\Users\\josue\\OneDrive\\Escritorio\\Proyecto Progra\\MikhunaEcuador\\MikhunaEcuador\\MikhunaMovilXF\\MikhunaMovilXF.UWP\\MikhunaMovilXF.UWP.csproj",
       "packagesPath": "C:\\Users\\josue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\josue\\OneDrive\\Escritorio\\Nuevo\\MikhunaEcuador\\MikhunaMovilXF\\MikhunaMovilXF.UWP\\obj\\",
+      "outputPath": "C:\\Users\\josue\\OneDrive\\Escritorio\\Proyecto Progra\\MikhunaEcuador\\MikhunaEcuador\\MikhunaMovilXF\\MikhunaMovilXF.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -9196,8 +9196,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\josue\\OneDrive\\Escritorio\\Nuevo\\MikhunaEcuador\\MikhunaMovilXF\\MikhunaMovilXF\\MikhunaMovilXF.csproj": {
-              "projectPath": "C:\\Users\\josue\\OneDrive\\Escritorio\\Nuevo\\MikhunaEcuador\\MikhunaMovilXF\\MikhunaMovilXF\\MikhunaMovilXF.csproj"
+            "C:\\Users\\josue\\OneDrive\\Escritorio\\Proyecto Progra\\MikhunaEcuador\\MikhunaEcuador\\MikhunaMovilXF\\MikhunaMovilXF\\MikhunaMovilXF.csproj": {
+              "projectPath": "C:\\Users\\josue\\OneDrive\\Escritorio\\Proyecto Progra\\MikhunaEcuador\\MikhunaEcuador\\MikhunaMovilXF\\MikhunaMovilXF\\MikhunaMovilXF.csproj"
             }
           }
         }

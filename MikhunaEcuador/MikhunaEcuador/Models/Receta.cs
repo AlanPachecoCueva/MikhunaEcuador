@@ -12,7 +12,7 @@ namespace MikhunaEcuador.Models
 
         [Required]
         [StringLength(50, MinimumLength = 2)]
-        [RegularExpression("^[a-zA-ZÀ-ÿ\u00f1\u00d1]+$", ErrorMessage = "Debe ingresar solo letras")]
+        [RegularExpression(@"^[a-zA-ZÀ-ÿ\u00f1\u00d1\s]+$", ErrorMessage = "Debe ingresar solo letras")]
         public string Nombre { get; set; }
 
         [Required]

@@ -157,6 +157,7 @@
     <Content Include="Images\relojColor.png" />
     <Content Include="Images\sopaMarinera.png" />
     <Content Include="Images\uchu.jpg" />
+    <Content Include="Scripts\CalificarReceta.js" />
     <Content Include="Scripts\Imagen.js" />
     <Content Include="Scripts\ImagenPerfil.js" />
     <Content Include="Scripts\script.js" />
