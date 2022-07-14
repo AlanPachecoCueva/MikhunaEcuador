@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MikhunaMovilXF.Views.LoginPage"
+             Title="Login Page"
              NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
         <StackLayout BackgroundColor="#F5B15C" Spacing="0">
@@ -34,17 +35,17 @@
                     <Image HorizontalOptions="Center" Source="LogoFinal" WidthRequest="200" Margin="0, 50"/>
 
                     <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand"  Margin="0,0,10,0" >
-                        <Label VerticalOptions="Center" Text="Correo:" TextColor="#A54E05" FontSize="Medium" HorizontalTextAlignment="Center" />
-                        <Entry Keyboard="Email" FontSize="Medium" WidthRequest="220" BackgroundColor="#FFEDD7" TextColor="#764304"/>
+                        <Label  VerticalOptions="Center" Text="Correo:" TextColor="#A54E05" FontSize="Medium" HorizontalTextAlignment="Center" />
+                        <Entry x:Name="txtCorreo" Keyboard="Email" FontSize="Medium" WidthRequest="220" BackgroundColor="#FFEDD7" TextColor="#764304"/>
                     </StackLayout>
 
                     <StackLayout Orientation="Horizontal" HorizontalOptions="End" Margin="0,0,10,0" >
-                        <Label VerticalOptions="Center" Text="Contraseña:" HorizontalOptions="Fill" TextColor="#A54E05" FontSize="Medium" HorizontalTextAlignment="Center" />
-                        <Entry IsPassword="true" FontSize="Medium" WidthRequest="220" BackgroundColor="#FFEDD7" TextColor="#764304"/>
+                        <Label  VerticalOptions="Center" Text="Contraseña:" HorizontalOptions="Fill" TextColor="#A54E05" FontSize="Medium" HorizontalTextAlignment="Center" />
+                        <Entry x:Name="txtContra" IsPassword="true" FontSize="Medium" WidthRequest="220" BackgroundColor="#FFEDD7" TextColor="#764304"/>
 
                     </StackLayout>
 
-                    <Button Clicked="GoToHome" 
+                    <Button Clicked="IniciarSesion" 
                             Text="Iniciar Sesión" 
                             Margin="30,40,30,40" 
                             HorizontalOptions="FillAndExpand"

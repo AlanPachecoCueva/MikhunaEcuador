@@ -4,20 +4,6 @@
              x:Class="MikhunaMovilXF.Views.Home"
              Title="Home Mikhuna"
              NavigationPage.HasNavigationBar="false">
-    <!--Title="{Binding Title}"-->
-    <!--Esto es de donde se van a sacar los datos. Se sacan del ViewModel-->
-    <!--<ContentPage.BindingContext>
-        <vm:HomeViewModel />
-    </ContentPage.BindingContext>-->
-
-    <!--Declara los recursos (Como colores, etc) que se usarán-->
-    <!--<ContentPage.Resources>
-        <ResourceDictionary>
-            <Color x:Key="Accent">#96d1ff</Color>
-        </ResourceDictionary>
-    </ContentPage.Resources>-->
-
-    <!--Tipo de vista tipo tabla GRID-->
     
     <StackLayout Spacing="0">
 
@@ -29,9 +15,9 @@
                 <!--<Label HorizontalOptions="Center" WidthRequest="150" Text="Home" Padding="160,0,0,0" TextColor="#fff" FontAttributes="Bold" FontSize="40"  VerticalTextAlignment="Center"/>-->
 
                 <Label BackgroundColor="#683A1C" Text="Home" FontSize="25" TextColor="#F0A15F" FontAttributes="Bold"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-             </Frame>
+            </Frame>
             <Frame  HasShadow="False" WidthRequest="80" BackgroundColor="#683A1C" Padding="0">
-                <ImageButton HorizontalOptions="End" Source="ExitUser" Padding="10,0,10,0" WidthRequest="50" Clicked="GoToLogin" BackgroundColor="#683A1C"/>
+                <ImageButton HorizontalOptions="End" Source="ExitUser" Padding="10,0,10,0" WidthRequest="50" Clicked="exit" BackgroundColor="#683A1C"/>
             </Frame>
         </StackLayout>
         
@@ -56,7 +42,7 @@
             
             <StackLayout>
                 <AbsoluteLayout Padding="0" HeightRequest="140">
-                <Image Source="bannerComida2" />
+                <Image HorizontalOptions="Center" Source="bannerComida2" />
                 
                     <StackLayout AbsoluteLayout.LayoutBounds="70,55" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
                         <Frame Padding="0" CornerRadius="5" >
@@ -82,30 +68,63 @@
             <ScrollView BackgroundColor="#F5B15C">
             
                 <StackLayout Orientation="Vertical" Padding="50,24,50,24" Spacing="10">
-                <Button Clicked="cargarRecetas" CornerRadius="5" Text="API" FontSize="21" BackgroundColor="#f1a224"></Button>
+                <!--<Button Clicked="cargarRecetas" CornerRadius="5" Text="API" FontSize="21" BackgroundColor="#f1a224"></Button>-->
 
-                <ListView x:Name="ListaRecetas">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <TextCell Text="{Binding Id}" Detail="{Binding Nombre}"/>
+
+                <ListView x:Name="ListaRecetas" HasUnevenRows="True" SelectionMode="Single">
+                    <ListView.ItemTemplate >
+                        <DataTemplate >
+                            <ViewCell >
+
+                                <Frame CornerRadius="10" Padding="0" Margin="0,0,0,15">
+                                    <StackLayout BackgroundColor="#000">
+                                        <StackLayout Spacing="0" Padding="0" IsVisible="True" BackgroundColor="#A54E05" >
+
+                                            <Label Text="{Binding Nombre}" 
+                                                   BackgroundColor="#F89800"
+                                                   FontSize="20"
+                                                   HorizontalTextAlignment="Center"
+                                                   Padding="0,7,0,7"/>
+
+                                            <Image Source="{Binding UrlImagen}" Aspect="AspectFill"/>
+
+                                            <StackLayout Orientation="Horizontal">
+                                                <Button Clicked="GoToBuscarReceta" 
+                                                        BindingContext="{Binding RecetaID}" 
+                                                        CornerRadius="5" 
+                                                        Text="                  Ver             " 
+                                                        FontSize="15" 
+                                                        FontAttributes="Bold"
+                                                        BackgroundColor="#A54E05"
+                                                        HorizontalOptions="FillAndExpand"></Button>
+
+                                                <Button Clicked="EliminarReceta" 
+                                                        BindingContext="{Binding RecetaID}" 
+                                                        CornerRadius="5" 
+                                                        Text="Eliminar" 
+                                                        FontSize="15" 
+                                                        BackgroundColor="#924506"
+                                                        HorizontalOptions="FillAndExpand"></Button>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </StackLayout>
+                                        
+                                    
+                                </Frame>
+                                    
+                            </ViewCell>
+                            
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-
-                <Frame CornerRadius="10" Padding="0" Margin="0,0,0,15">
-                    <StackLayout Spacing="0" Padding="0">
-                        <Image Source="ceviche"/>
-                        <Button Clicked="GoToBuscarReceta" CornerRadius="5" Text="Ver" FontSize="21" BackgroundColor="#f1a224"></Button>
-                    </StackLayout>
-                    
-                </Frame>
-                    
-                <Frame CornerRadius="10" Padding="0" Margin="0,0,0,15">
+                <!--/*Detail="{Binding Nombre}*/-->
+                <!---->
+                <!--<Frame CornerRadius="10" Padding="0" Margin="0,0,0,15">
                         <Image Source="ceviche"/>
                     </Frame>
                     <Frame CornerRadius="10" Padding="0" Margin="0,0,0,15">
                         <Image Source="ceviche"/>
-                    </Frame>
+                    </Frame>-->
 
                 </StackLayout>
 

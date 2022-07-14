@@ -23,10 +23,39 @@ namespace MikhunaAPI.Controllers
         public IHttpActionResult GetRecetas(int id)
         {
             Recetas recetas = db.Recetas.Find(id);
+            
             if (recetas == null)
             {
+                
                 return NotFound();
             }
+
+
+            //Si la receta existe
+
+            //Recuperamos los pasos de esa receta
+            var aux = from b in db.Pasos
+                      where b.RecetaID == id
+                      select b;
+
+
+            recetas.Pasos = aux.ToList();  
+
+            //Recuperamos los ingredientes de esa receta
+            var auxIngre = from b in db.Ingredientes
+                           where b.RecetaID == id
+                           select b;
+
+
+            recetas.Ingredientes = auxIngre.ToList();
+
+            //Recuperamos los comentarios de esa receta
+            var auxComen = from b in db.Comentarios
+                           where b.RecetaID == id
+                           select b;
+
+
+            recetas.Comentarios = auxComen.ToList();
 
             return Ok(recetas);
         }

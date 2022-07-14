@@ -8,6 +8,7 @@ namespace MikhunaAPI.Models
 
     public partial class Pasos
     {
+        [Key]
         public int PasosID { get; set; }
 
         [Required]
@@ -15,7 +16,7 @@ namespace MikhunaAPI.Models
         public string Paso { get; set; }
 
         public int RecetaID { get; set; }
-
-        public virtual Recetas Recetas { get; set; }
+        [ForeignKey("RecetaID")]
+        public Recetas Recetas { get; set; }
     }
 }

@@ -20,7 +20,7 @@ namespace MikhunaAPI.Models
         public string Unidad { get; set; }
 
         public int RecetaID { get; set; }
-
-        public virtual Recetas Recetas { get; set; }
+        [ForeignKey("RecetaID")]
+        public Recetas Recetas { get; set; }
     }
 }

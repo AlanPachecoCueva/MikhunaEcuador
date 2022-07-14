@@ -34,21 +34,21 @@ namespace MikhunaAPI.Models
         public float CalificacionPromedio { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Calificacions> Calificacions { get; set; }
+        public ICollection<Calificacions> Calificacions { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Comentarios> Comentarios { get; set; }
+        public ICollection<Comentarios> Comentarios { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Favoritos> Favoritos { get; set; }
+        public ICollection<Favoritos> Favoritos { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Ingredientes> Ingredientes { get; set; }
+        public ICollection<Ingredientes> Ingredientes { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Pasos> Pasos { get; set; }
+        public ICollection<Pasos> Pasos { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<RecetasTerminadas> RecetasTerminadas { get; set; }
+        public ICollection<RecetasTerminadas> RecetasTerminadas { get; set; }
     }
 }

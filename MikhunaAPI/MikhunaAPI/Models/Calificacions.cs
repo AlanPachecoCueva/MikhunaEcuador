@@ -12,13 +12,13 @@ namespace MikhunaAPI.Models
         public int CalificacionID { get; set; }
 
         public float NumeroEstrellas { get; set; }
-
+        
         public int RecetaID { get; set; }
 
         public int UsuarioID { get; set; }
-
-        public virtual Recetas Recetas { get; set; }
-
-        public virtual Usuarios Usuarios { get; set; }
+        [ForeignKey("RecetaID")]
+        public Recetas Recetas { get; set; }
+        [ForeignKey("UsuarioID")]
+        public Usuarios Usuarios { get; set; }
     }
 }

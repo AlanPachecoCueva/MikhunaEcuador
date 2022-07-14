@@ -27,7 +27,7 @@
                                  Source="ExitUser" 
                                  Padding="10,0,10,0" 
                                  WidthRequest="50" 
-                                 Clicked="GoToLogin" 
+                                 Clicked="exit" 
                                  BackgroundColor="#683A1C"
                                  />
                 </Frame>
@@ -47,14 +47,14 @@
                         <StackLayout Padding="0" >
                             <Frame Padding="3,2">
                                 <Frame Padding="0">
-                                    <Image HeightRequest="400" 
-                                            Source="Alan"/>
+                                    <Image x:Name="ImagenPerfil"  HeightRequest="400"/>
                                 </Frame>
                             </Frame>
                             
                             
                             
                             <Button Margin="0,10" 
+                                    Clicked="SubirFoto"
                                     BorderColor="#fff" 
                                     BorderWidth="1.5" 
                                     CornerRadius="10" 
@@ -93,7 +93,8 @@
                                        FontAttributes="Bold" />
 
                                 <Frame Padding="0" CornerRadius="10">
-                                    <Entry TextColor="#000" 
+                                    <Entry TextColor="#000"
+                                           x:Name="txtNombreUsuario"
                                            FontSize="Medium" 
                                            WidthRequest="260" 
                                            BackgroundColor="#fff"
@@ -115,6 +116,7 @@
                                FontAttributes="Bold" />
                                 <Frame Padding="0" CornerRadius="10">
                                     <Entry TextColor="#000" 
+                                           x:Name="txtCorreo"
                                            FontSize="Medium" 
                                            WidthRequest="260" 
                                            BackgroundColor="#fff"
@@ -137,6 +139,7 @@
 
                                 <Frame Padding="0" CornerRadius="10">
                                     <Entry TextColor="#000" 
+                                           x:Name="txtClave"
                                            FontSize="Medium" 
                                            WidthRequest="260" 
                                            BackgroundColor="#fff"
@@ -150,7 +153,8 @@
                     
                     
 
-                    <Button Margin="50,10,50,20" 
+                    <Button Margin="50,10,50,20"
+                            Clicked="EditProfile"
                             BorderColor="#fff" 
                             BorderWidth="1.5" 
                             CornerRadius="10" 

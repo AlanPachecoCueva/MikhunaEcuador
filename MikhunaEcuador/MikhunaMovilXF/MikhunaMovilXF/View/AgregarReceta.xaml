@@ -5,9 +5,8 @@
              x:Class="MikhunaMovilXF.Views.AgregarReceta"
              Title="Agregar Receta"
              NavigationPage.HasNavigationBar="false">
-    
-    
-    <StackLayout Spacing="0"  BackgroundColor="#F5B15C" >
+
+        <StackLayout Spacing="0"  BackgroundColor="#F5B15C" >
         
         <StackLayout HeightRequest="60" Orientation="Horizontal"  BackgroundColor="#683A1C" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Spacing="60">
             <Frame HasShadow="False" WidthRequest="40" Padding="0">
@@ -20,7 +19,7 @@
                 <Label BackgroundColor="#683A1C" Text="Agregar Receta" FontSize="25" TextColor="#F0A15F" FontAttributes="Bold"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
             </Frame>
             <Frame HasShadow="False" WidthRequest="80" BackgroundColor="#683A1C" Padding="0" Margin="0,0,0,0">
-                <ImageButton HorizontalOptions="End" Source="ExitUser" Padding="10,0,10,0" WidthRequest="50" Clicked="GoToLogin" BackgroundColor="#683A1C"/>
+                <ImageButton HorizontalOptions="End" Source="ExitUser" Padding="10,0,10,0" WidthRequest="50" Clicked="exit" BackgroundColor="#683A1C"/>
             </Frame>
         </StackLayout>
 
@@ -45,7 +44,8 @@
                                HorizontalTextAlignment="Center"/>
 
                         <Frame Padding="0" CornerRadius="10">
-                            <Entry  Keyboard="Text"
+                            <Entry x:Name="NombreReceta"
+                                Keyboard="Text"
                                 FontSize="20"
                                 Placeholder="Nombre de receta"
                                 PlaceholderColor="#C1C0C0"
@@ -62,7 +62,8 @@
                                HorizontalTextAlignment="Center"/>
 
                         <Frame Padding="0" CornerRadius="10">
-                            <Entry Keyboard="Text"
+                            <Entry x:Name="DuracionReceta"
+                                Keyboard="Text"
                                     FontSize="20"
                                     Placeholder="40"
                                     PlaceholderColor="#C1C0C0"
@@ -70,37 +71,31 @@
                                     BackgroundColor="#fff"/>
                             <!--Text="{Binding Description, Mode=TwoWay}"-->
                         </Frame>
+                        <Label Text="Imagen De Receta"
+                               TextColor="#A54E05" 
+                               FontSize="20" 
+                               FontAttributes="Bold" 
+                               HorizontalTextAlignment="Center"/>
                         
-
-                        <StackLayout Orientation="Horizontal" Spacing="0">
-                            <Frame Padding="0" CornerRadius="10">
-                                <Label VerticalTextAlignment="Center" 
-                                       FontSize="20" 
-                                       FontAttributes="Bold" 
-                                       HorizontalTextAlignment="Center" 
-                                       Text="Ceviche.png" 
-                                       WidthRequest="230" 
-                                       BackgroundColor="White" TextColor="#A54E05"/>
-                            </Frame>
-
-                            <Button Margin="-20,0,0,0" 
-                                    Text="Examinar"  
-                                    HorizontalOptions="FillAndExpand"
-                                    CornerRadius="10" 
-                                    Padding="0" 
-                                    FontSize="20" 
-                                    FontAttributes="Bold" 
-                                    TextColor="#FFA152" 
-                                    BackgroundColor="#683A1C"/>
-                            <!--Command="{Binding SaveCommand}"-->
-                        </StackLayout>
-
-
-                        <Image Source="Ceviche"/>
-
+                        <Frame Padding="2" HorizontalOptions="Fill" VerticalOptions="Fill" HeightRequest="300" BackgroundColor="#FFA152">
+                            <Image x:Name="img" Aspect="AspectFill" BackgroundColor="#fff"></Image>
+                        </Frame>
+                        
+                        <Button Margin="0,0,0,0" 
+                                Text="Examinar" 
+                                Clicked="SubirFoto"
+                                HorizontalOptions="FillAndExpand"
+                                CornerRadius="10" 
+                                Padding="0" 
+                                FontSize="20" 
+                                FontAttributes="Bold" 
+                                TextColor="#FFA152" 
+                                BackgroundColor="#683A1C"/>
+                        
                         <!--Command="{Binding CancelCommand}"-->
                         <Button CornerRadius="10" 
-                                Text="Crear"  
+                                Text="Crear"
+                                Clicked="EnviarReceta"
                                 HorizontalOptions="Center"  
                                 Margin="0,0,0,20" 
                                 BorderColor="#fff" 
@@ -142,7 +137,8 @@
                                    FontAttributes="Bold"/>
 
                         <Frame Padding="0" CornerRadius="10">
-                            <Entry Keyboard="Text"
+                            <Entry x:Name="txtNombreIngrediente"
+                                   Keyboard="Text"
                                    FontSize="20"
                                    Placeholder="Cazuela de pollo"
                                    PlaceholderColor="#C1C0C0"
@@ -158,7 +154,8 @@
                                    FontAttributes="Bold"/>
 
                         <Frame Padding="0" CornerRadius="10">
-                            <Entry Keyboard="Text"
+                            <Entry x:Name="txtCantidad"
+                                   Keyboard="Text"
                                    FontSize="20"
                                    Placeholder="2 libras"
                                    PlaceholderColor="#C1C0C0"
@@ -167,7 +164,8 @@
 
                         </Frame>
 
-                        <Button Text="Agregar"  
+                        <Button Text="Agregar" 
+                                Clicked="AgregarIngrediente"
                                     HorizontalOptions="Center"  
                                     CornerRadius="10" 
                                     Margin="0,0,0,20" 
@@ -203,16 +201,18 @@
 
                             <Frame Padding="0" CornerRadius="10">
                                 <Entry Keyboard="Text"
-                                   FontSize="20"
-                                   Placeholder="Cocinar el pollo"
-                                   PlaceholderColor="#C1C0C0"
-                                   TextColor="#000"
-                                   BackgroundColor="#fff"/>
+                                       x:Name="txtPaso"
+                                       FontSize="20"
+                                       Placeholder="Cocinar el pollo"
+                                       PlaceholderColor="#C1C0C0"
+                                       TextColor="#000"
+                                       BackgroundColor="#fff"/>
 
                             </Frame>
 
                             <Button CornerRadius="10" 
                                     Text="Agregar"  
+                                    Clicked="AgregarPaso"
                                     HorizontalOptions="Center" 
                                     Margin="0,20,0,20" 
                                     BorderColor="#fff" 

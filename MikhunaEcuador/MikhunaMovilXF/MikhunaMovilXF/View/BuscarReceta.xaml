@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="clr-namespace:MikhunaMovilXF.Externas"
              x:Class="MikhunaMovilXF.Views.BuscarReceta"
              Title="BuscarReceta"
              NavigationPage.HasNavigationBar="false">
 
-    <StackLayout BackgroundColor="#F5B15C" Spacing="0">
+    <StackLayout BackgroundColor="#F5B15C" Spacing="0" VerticalOptions="Fill">
 
         <StackLayout HeightRequest="60" Orientation="Horizontal"  BackgroundColor="#683A1C" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Spacing="60">
             <Frame HasShadow="False" WidthRequest="40" Padding="0" BackgroundColor="#683A1C">
@@ -18,25 +18,27 @@
                 <Label BackgroundColor="#683A1C" Text="Ver Receta" FontSize="25" TextColor="#F0A15F" FontAttributes="Bold"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
             </Frame>
             <Frame HasShadow="False" WidthRequest="80" BackgroundColor="#683A1C" Padding="0" Margin="0,0,0,0">
-                <ImageButton HorizontalOptions="End" Source="ExitUser" Padding="10,0,10,0" WidthRequest="50" Clicked="GoToLogin" BackgroundColor="#683A1C"/>
+                <ImageButton HorizontalOptions="End" Source="ExitUser" Padding="10,0,10,0" WidthRequest="50" Clicked="exit" BackgroundColor="#683A1C"/>
             </Frame>
         </StackLayout>
         
         <ScrollView>
 
-            <StackLayout Spacing="0">
-                <StackLayout Padding="0" Spacing="0">
-                    <Image Source="Ceviche" WidthRequest="384"/>
+            <StackLayout Spacing="0" VerticalOptions="Fill">
+                <StackLayout Padding="0" Spacing="0" VerticalOptions="Fill">
+                    
+                    <!--Imagen de la Receta-->
+                    <Image x:Name="urlReceta" Source="Ceviche" WidthRequest="384" Aspect="AspectFill"/>
                     <Frame Padding="0" BackgroundColor="#683A1C">
-                        <Label HorizontalOptions="Center" TextColor="#F8B561" FontAttributes="Bold" FontSize="30" Text="Ceviche"/>
+                        <Label x:Name="nombreReceta" HorizontalOptions="Center" TextColor="#F8B561" FontAttributes="Bold" FontSize="30" Text="Ceviche"/>
                     </Frame>
                 </StackLayout>
 
-                <StackLayout BackgroundColor="#F3A544" Spacing="0" Padding="0,20,0,20" Margin="0,40,0,40">
+                <StackLayout VerticalOptions="Fill" BackgroundColor="#F3A544" Spacing="0" Padding="0,20,0,20" Margin="0,40,0,40">
                     <Label FontSize="25" HorizontalOptions="Center"  TextColor="#A54E05" Text="Evalúa la receta"/>
 
                     <!--Estrellitas-->
-                    <StackLayout HorizontalOptions="Center" Orientation="Horizontal" x:Name="rattingBar" >
+                    <StackLayout  VerticalOptions="Fill" HorizontalOptions="Center" Orientation="Horizontal" x:Name="rattingBar" >
 
 
                         <Label Text="★" FontSize="35" x:Name="star1" StyleId="star1">
@@ -88,12 +90,13 @@
 
                     </StackLayout>
                     <!--Estrellitas-->
+                    
                 </StackLayout>
 
 
                 <Frame Padding="0" Margin="30,0,30,20" BackgroundColor="#fff" CornerRadius="15">
-                    <StackLayout Margin="0,15,0,0">
-                        <Label HorizontalOptions="Center" FontAttributes="Bold" FontSize="25" TextColor="#A54E05">47</Label>
+                    <StackLayout VerticalOptions="Fill" Margin="0,15,0,0">
+                        <Label x:Name="cantidadMinutos" HorizontalOptions="Center" FontAttributes="Bold" FontSize="25" TextColor="#A54E05"></Label>
 
                         <Frame BackgroundColor="#FFE8D4">
                             <StackLayout>
@@ -115,209 +118,148 @@
                         </Frame>
                     </StackLayout>
                 </Frame>
-
+                
                 <Frame Padding="0" Margin="30,20" CornerRadius="15">
-                    <StackLayout Margin="20">
+                    <StackLayout VerticalOptions="Fill" Margin="20">
                         <Label HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="#A54E05">Ingredientes</Label>
+                        <StackLayout VerticalOptions="Fill">
+                            <ListView x:Name="ListaIngredientes" HasUnevenRows="True" SelectionMode="Single">
+                    <ListView.ItemTemplate >
+                        <DataTemplate >
+                            <ViewCell >
 
-                        <Frame>
+                                            <StackLayout Orientation="Horizontal">
+                                                <CheckBox Color="#683A1C"/>
+                                                <Label TextColor="#A54E05" Text="{Binding NombreIngre}" VerticalOptions="Center"/>
+                                            </StackLayout>
 
-                            <StackLayout>
+                                        </ViewCell>
 
-                                <StackLayout Orientation="Horizontal">
-                                    <CheckBox Color="#683A1C"/>
-                                    <Label TextColor="#A54E05" Text="120g. Camarones" VerticalOptions="Center"/>
-                                </StackLayout>
-
-                                <StackLayout Orientation="Horizontal">
-                                    <CheckBox Color="#683A1C"/>
-                                    <Label TextColor="#A54E05" Text="1Kg. Tomates" VerticalOptions="Center"/>
-                                </StackLayout>
-
-                                <StackLayout Orientation="Horizontal">
-                                    <CheckBox Color="#683A1C"/>
-                                    <Label TextColor="#A54E05" Text="4 hojas de albahaca" VerticalOptions="Center"/>
-                                </StackLayout>
-
-                                <StackLayout Orientation="Horizontal">
-                                    <CheckBox Color="#683A1C"/>
-                                    <Label TextColor="#A54E05" Text="1/2Kg. Langostino" VerticalOptions="Center"/>
-                                </StackLayout>
-
-                                <StackLayout Orientation="Horizontal">
-                                    <CheckBox Color="#683A1C"/>
-                                    <Label TextColor="#A54E05" Text="2 unidades de cebolla" VerticalOptions="Center"/>
-                                </StackLayout>
-
-                                <StackLayout Orientation="Horizontal">
-                                    <CheckBox Color="#683A1C"/>
-                                    <Label TextColor="#A54E05" Text="6 dientes de ajo" VerticalOptions="Center"/>
-                                </StackLayout>
-
-                            </StackLayout>
-
-                        </Frame>
-
-
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                        </StackLayout>
                     </StackLayout>
-
-                </Frame>
-
-
+                 </Frame>
+                
                 <!--Pasos-->
                 <Frame Padding="0" Margin="30,20" CornerRadius="15">
-                    <StackLayout Margin="20">
-
+                    <StackLayout Margin="20" Orientation="Vertical" VerticalOptions="Fill">
                         <Label Margin="0,0,0,5" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="#A54E05">Pasos</Label>
-
                         <Frame Margin="-13,0,-10,0" HasShadow="True" Padding="0">
+                            <ListView x:Name="listaPasos" HasUnevenRows="True" SelectionMode="None" VerticalOptions="FillAndExpand" HeightRequest="500">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate >
+                                        <ViewCell>
+                                            <Frame CornerRadius="10" Padding="0" Margin="0,0,0,15">
+                                                    <StackLayout Orientation="Horizontal">
 
-                            <StackLayout Padding="3,15,3,15">
+                                                        <Label FontAttributes="Bold"
+                                                           WidthRequest="30" 
+                                                           HeightRequest="30"  
+                                                           BackgroundColor="#683A1C" 
+                                                           HorizontalTextAlignment="Center" 
+                                                           VerticalTextAlignment="Center" 
+                                                           TextColor="#fff" 
+                                                           FontSize="20"
+                                                           Text="{Binding numeroPaso}">
+                                                        </Label>
 
-                                <StackLayout Orientation="Horizontal">
-
-                                    <Label FontAttributes="Bold"
-                                           WidthRequest="30" 
-                                           HeightRequest="30"  
-                                           BackgroundColor="#683A1C" 
-                                           HorizontalTextAlignment="Center" 
-                                           VerticalTextAlignment="Center" 
-                                           TextColor="#fff" 
-                                           FontSize="20"
-                                           >1</Label>
-
-                                    <Label FontSize="20"
-                                           TextColor="#A54E05" 
-                                           Text="Prepara el refrito dorando el pimiento, cebollas y sazona con sal." 
-                                           VerticalOptions="Center"/>
-
-                                </StackLayout>
-
-                                <StackLayout Orientation="Horizontal">
-
-                                    <Label FontAttributes="Bold"
-                                           WidthRequest="30" 
-                                           HeightRequest="30"  
-                                           BackgroundColor="#683A1C" 
-                                           HorizontalTextAlignment="Center" 
-                                           VerticalTextAlignment="Center" 
-                                           TextColor="#fff" 
-                                           FontSize="20"
-                                           >2</Label>
-
-                                    <Label FontSize="20"
-                                           TextColor="#A54E05" 
-                                           Text="Prepara la masa de verde y amásalo con la mano." 
-                                           VerticalOptions="Center"/>
-
-                                </StackLayout>
-
-                                <StackLayout Orientation="Horizontal">
-
-                                    <Label FontAttributes="Bold"
-                                           WidthRequest="30" 
-                                           HeightRequest="30"  
-                                           BackgroundColor="#683A1C" 
-                                           HorizontalTextAlignment="Center" 
-                                           VerticalTextAlignment="Center" 
-                                           TextColor="#fff" 
-                                           FontSize="20"
-                                           >3</Label>
-
-                                    <Label FontSize="20"
-                                           TextColor="#A54E05" 
-                                           Text="Sazona los camarones con adobo completo." 
-                                           VerticalOptions="Center"/>
-
-                                </StackLayout>
-
-
-                            </StackLayout>
-
+                                                        <Label FontSize="20"
+                                                           TextColor="#A54E05" 
+                                                           Text="{Binding Paso}" 
+                                                           VerticalOptions="Center"/>
+                                                    </StackLayout>
+                                                </Frame>
+                                        </ViewCell>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
                         </Frame>
-
-
                     </StackLayout>
-
                 </Frame>
                 <!--Pasos-->
-
 
                 <!--comentarios-->
-                    <StackLayout Margin="20">
+                <StackLayout Margin="20">
+                    <Label Margin="0,0,0,5" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="#A54E05">Comentarios</Label>
+                    <Frame Margin="0,10,0,10" HeightRequest="2" Padding="0"></Frame>
+                    <Frame Padding="0" BackgroundColor="#FFD6B2" CornerRadius="30">
 
-                        <Label Margin="0,0,0,5" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="#A54E05">Comentarios</Label>
-
-
-                        <Frame Padding="0" BackgroundColor="#FFD6B2" CornerRadius="30">
-                        
-                            <StackLayout Orientation="Horizontal" Spacing="0">
-                                <StackLayout>
-                                    <Frame Margin="0,0,2,0" Padding="0" CornerRadius="30" HeightRequest="60" WidthRequest="60" BackgroundColor="#000">
-                                        <Image HorizontalOptions="Fill" VerticalOptions="Fill" WidthRequest="80" Source="Alan"/>
-                                    </Frame>
-                                </StackLayout>
-                                
-
-                                <Entry Placeholder="Añade un comentario" TextColor="#A54E05" PlaceholderColor="#A54E05" WidthRequest="228"  BackgroundColor="#FFD6B2" FontSize="Medium" />
-
-                                <ImageButton Padding="10,0,5,0" BackgroundColor="#fff"  WidthRequest="55" Source="enviar"/>
-                            
-                                
+                        <StackLayout Orientation="Horizontal" Spacing="0">
+                            <StackLayout>
+                                <Frame Margin="0,0,2,0" Padding="0" CornerRadius="30" HeightRequest="60" WidthRequest="60" BackgroundColor="#000">
+                                    <Image x:Name="ImagenComentario" HorizontalOptions="Fill" VerticalOptions="Fill" WidthRequest="80"/>
+                                </Frame>
                             </StackLayout>
-                        </Frame>
-
-                        <Frame Margin="0,10,0,10" HeightRequest="2" Padding="0"></Frame>
-
-                        <StackLayout Spacing="20">
-                            <Frame Padding="0" BackgroundColor="#FFD6B2" CornerRadius="30">
-
-                                <StackLayout Orientation="Horizontal" Spacing="0">
-                                    <StackLayout>
-                                        <Frame Padding="0" CornerRadius="30" HeightRequest="60" WidthRequest="60" BackgroundColor="#000">
-                                            <Image HorizontalOptions="Fill" VerticalOptions="Fill" WidthRequest="80" Source="Chris"/>
-                                        </Frame>
-                                    </StackLayout>
-
-                                    <Label Padding="3,0,0,0" VerticalTextAlignment="Center" Text="Excelente Receta."  TextColor="#A54E05" WidthRequest="290"  BackgroundColor="#FFD6B2" FontSize="Medium" />
-
-                                </StackLayout>
-                            </Frame>
-
-                            <Frame Padding="0" BackgroundColor="#FFD6B2" CornerRadius="30">
-
-                                <StackLayout Orientation="Horizontal" Spacing="0">
-                                    <StackLayout>
-                                        <Frame Padding="0" CornerRadius="30" HeightRequest="60" WidthRequest="60" BackgroundColor="#000">
-                                            <Image HorizontalOptions="Fill" VerticalOptions="Fill" WidthRequest="80" HeightRequest="80" Source="Juan"/>
-                                        </Frame>
-                                    </StackLayout>
-
-                                    <Label Padding="3,0,0,0" VerticalTextAlignment="Center" Text="Tardé incluso menos de lo que esperaba!"  TextColor="#A54E05" WidthRequest="290"  BackgroundColor="#FFD6B2" FontSize="Medium" />
-
-                                </StackLayout>
-                            </Frame>
-
-                            <Frame Padding="0" BackgroundColor="#FFD6B2" CornerRadius="30">
-
-                                <StackLayout Orientation="Horizontal" Spacing="0">
-                                    <StackLayout>
-                                        <Frame Margin="0" Padding="0" CornerRadius="30" HeightRequest="60" WidthRequest="60" BackgroundColor="#000">
-                                            <Image HorizontalOptions="Fill" VerticalOptions="Fill" WidthRequest="80" Source="Alan"/>
-                                        </Frame>
-                                    </StackLayout>
 
 
-                                    <Label Padding="3,0,0,0" VerticalTextAlignment="Center" Text="Explicado de una manera muy sencilla y lógica."  TextColor="#A54E05" WidthRequest="290"  BackgroundColor="#FFD6B2" FontSize="Medium" />
+                            <Entry x:Name="txtComentario" Placeholder="Añade un comentario" TextColor="#A54E05" PlaceholderColor="#A54E05" WidthRequest="228"  BackgroundColor="#FFD6B2" FontSize="Medium" />
 
-                                </StackLayout>
-                            </Frame>
+                            <ImageButton Clicked="subirComentario" Padding="10,0,5,0" BackgroundColor="#fff"  WidthRequest="55" Source="enviar"/>
+
 
                         </StackLayout>
-                        
+                    </Frame>
+                    <StackLayout Spacing="20">
+                    <ListView x:Name="listaComentarios" HasUnevenRows="True" SelectionMode="Single">
+                        <ListView.ItemTemplate >
+                            <DataTemplate >
+                                <ViewCell >
+
+                                    
+                                        <Frame Margin="0,15,0,0" Padding="0" BackgroundColor="#FFD6B2" CornerRadius="30">
+
+                                            <StackLayout Orientation="Horizontal" Spacing="0">
+                                                <StackLayout>
+                                                    <Frame Padding="0" CornerRadius="30" HeightRequest="60" WidthRequest="60" BackgroundColor="#000">
+                                                        <Image HorizontalOptions="Fill" VerticalOptions="Fill" WidthRequest="80" Source="{Binding UrlImagenUsuario}"/>
+                                                    </Frame>
+                                                </StackLayout>
+
+                                                <Label Padding="3,0,0,0" VerticalTextAlignment="Center" Text="{Binding Contenido}"  TextColor="#A54E05" WidthRequest="290"  BackgroundColor="#FFD6B2" FontSize="Medium" />
+
+                                            </StackLayout>
+                                        </Frame>
+
+                                        <!--<Frame Padding="0" BackgroundColor="#FFD6B2" CornerRadius="30">
+
+                                            <StackLayout Orientation="Horizontal" Spacing="0">
+                                                <StackLayout>
+                                                    <Frame Padding="0" CornerRadius="30" HeightRequest="60" WidthRequest="60" BackgroundColor="#000">
+                                                        <Image HorizontalOptions="Fill" VerticalOptions="Fill" WidthRequest="80" HeightRequest="80" Source="Juan"/>
+                                                    </Frame>
+                                                </StackLayout>
+
+                                                <Label Padding="3,0,0,0" VerticalTextAlignment="Center" Text="Tardé incluso menos de lo que esperaba!"  TextColor="#A54E05" WidthRequest="290"  BackgroundColor="#FFD6B2" FontSize="Medium" />
+
+                                            </StackLayout>
+                                        </Frame>
+
+                                        <Frame Padding="0" BackgroundColor="#FFD6B2" CornerRadius="30">
+
+                                            <StackLayout Orientation="Horizontal" Spacing="0">
+                                                <StackLayout>
+                                                    <Frame Margin="0" Padding="0" CornerRadius="30" HeightRequest="60" WidthRequest="60" BackgroundColor="#000">
+                                                        <Image HorizontalOptions="Fill" VerticalOptions="Fill" WidthRequest="80" Source="Alan"/>
+                                                    </Frame>
+                                                </StackLayout>
 
 
+                                                <Label Padding="3,0,0,0" VerticalTextAlignment="Center" Text="Explicado de una manera muy sencilla y lógica."  TextColor="#A54E05" WidthRequest="290"  BackgroundColor="#FFD6B2" FontSize="Medium" />
+
+                                            </StackLayout>
+                                        </Frame>-->
+
+                                    
+
+                                </ViewCell>
+
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
                 </StackLayout>
+            </StackLayout>
 
                 <!--comentarios-->
 

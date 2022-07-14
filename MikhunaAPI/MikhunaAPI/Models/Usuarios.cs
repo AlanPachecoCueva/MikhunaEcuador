@@ -35,15 +35,15 @@ namespace MikhunaAPI.Models
         public string Imagen { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Calificacions> Calificacions { get; set; }
+        public ICollection<Calificacions> Calificacions { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Comentarios> Comentarios { get; set; }
+        public ICollection<Comentarios> Comentarios { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Favoritos> Favoritos { get; set; }
+        public ICollection<Favoritos> Favoritos { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<RecetasTerminadas> RecetasTerminadas { get; set; }
+        public ICollection<RecetasTerminadas> RecetasTerminadas { get; set; }
     }
 }

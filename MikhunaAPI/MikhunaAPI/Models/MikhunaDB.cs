@@ -1,6 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 
 namespace MikhunaAPI.Models
@@ -12,66 +13,19 @@ namespace MikhunaAPI.Models
         {
         }
 
-        public virtual DbSet<Calificacions> Calificacions { get; set; }
-        public virtual DbSet<Comentarios> Comentarios { get; set; }
-        public virtual DbSet<Favoritos> Favoritos { get; set; }
-        public virtual DbSet<Ingredientes> Ingredientes { get; set; }
-        public virtual DbSet<Pasos> Pasos { get; set; }
-        public virtual DbSet<Recetas> Recetas { get; set; }
-        public virtual DbSet<RecetasTerminadas> RecetasTerminadas { get; set; }
-        public virtual DbSet<Usuarios> Usuarios { get; set; }
+        public DbSet<Calificacions> Calificacions { get; set; }
+        public DbSet<Comentarios> Comentarios { get; set; }
+        public DbSet<Favoritos> Favoritos { get; set; }
+        public DbSet<Ingredientes> Ingredientes { get; set; }
+        public DbSet<Pasos> Pasos { get; set; }
+        public DbSet<Recetas> Recetas { get; set; }
+        public DbSet<RecetasTerminadas> RecetasTerminadas { get; set; }
+        public DbSet<Usuarios> Usuarios { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            //modelbuilder.entity<recetas>()
-            //    .hasmany(e => e.calificacions)
-            //    .withrequired(e => e.recetas)
-            //    .willcascadeondelete(false);
 
-            //modelbuilder.entity<recetas>()
-            //    .hasmany(e => e.comentarios)
-            //    .withrequired(e => e.recetas)
-            //    .willcascadeondelete(false);
-
-            //modelbuilder.entity<recetas>()
-            //    .hasmany(e => e.favoritos)
-            //    .withrequired(e => e.recetas)
-            //    .willcascadeondelete(false);
-
-            //modelbuilder.entity<recetas>()
-            //    .hasmany(e => e.ingredientes)
-            //    .withrequired(e => e.recetas)
-            //    .willcascadeondelete(false);
-
-            //modelbuilder.entity<recetas>()
-            //    .hasmany(e => e.pasos)
-            //    .withrequired(e => e.recetas)
-            //    .willcascadeondelete(false);
-
-            //modelbuilder.entity<recetas>()
-            //    .hasmany(e => e.recetasterminadas)
-            //    .withrequired(e => e.recetas)
-            //    .willcascadeondelete(false);
-
-            //modelbuilder.entity<usuarios>()
-            //    .hasmany(e => e.calificacions)
-            //    .withrequired(e => e.usuarios)
-            //    .willcascadeondelete(false);
-
-            //modelbuilder.entity<usuarios>()
-            //    .hasmany(e => e.comentarios)
-            //    .withrequired(e => e.usuarios)
-            //    .willcascadeondelete(false);
-
-            //modelbuilder.entity<usuarios>()
-            //    .hasmany(e => e.favoritos)
-            //    .withrequired(e => e.usuarios)
-            //    .willcascadeondelete(false);
-
-            //modelbuilder.entity<usuarios>()
-            //    .hasmany(e => e.recetasterminadas)
-            //    .withrequired(e => e.usuarios)
-            //    .willcascadeondelete(false);
+            modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
         }
     }
 }

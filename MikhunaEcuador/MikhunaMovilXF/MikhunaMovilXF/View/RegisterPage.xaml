@@ -34,22 +34,22 @@
                     <Image HorizontalOptions="Center" Source="LogoFinal" WidthRequest="200" Margin="0, 50"/>
 
                     <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand"  Margin="0,0,10,0" >
-                        <Label VerticalOptions="Center" Text="Usuario:" TextColor="#A54E05" FontSize="Medium" HorizontalTextAlignment="Center" />
-                        <Entry Keyboard="Text" FontSize="Medium" WidthRequest="220" BackgroundColor="#FFEDD7" TextColor="#764304"/>
+                        <Label  VerticalOptions="Center" Text="Usuario:" TextColor="#A54E05" FontSize="Medium" HorizontalTextAlignment="Center" />
+                        <Entry x:Name="txtNombreUsuario" Keyboard="Text" FontSize="Medium" WidthRequest="220" BackgroundColor="#FFEDD7" TextColor="#764304"/>
                     </StackLayout>
                     
                     <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand"  Margin="0,0,10,0" >
-                        <Label VerticalOptions="Center" Text="Correo:" TextColor="#A54E05" FontSize="Medium" HorizontalTextAlignment="Center" />
-                        <Entry Keyboard="Email" FontSize="Medium" WidthRequest="220" BackgroundColor="#FFEDD7" TextColor="#764304"/>
+                        <Label  VerticalOptions="Center" Text="Correo:" TextColor="#A54E05" FontSize="Medium" HorizontalTextAlignment="Center" />
+                        <Entry x:Name="txtCorreo" Keyboard="Email" FontSize="Medium" WidthRequest="220" BackgroundColor="#FFEDD7" TextColor="#764304"/>
                     </StackLayout>
 
                     <StackLayout Orientation="Horizontal" HorizontalOptions="End" Margin="0,0,10,0" >
-                        <Label VerticalOptions="Center" Text="Contraseña:" HorizontalOptions="Fill" TextColor="#A54E05" FontSize="Medium" HorizontalTextAlignment="Center" />
-                        <Entry IsPassword="true" FontSize="Medium" WidthRequest="220" BackgroundColor="#FFEDD7" TextColor="#764304"/>
+                        <Label  VerticalOptions="Center" Text="Contraseña:" HorizontalOptions="Fill" TextColor="#A54E05" FontSize="Medium" HorizontalTextAlignment="Center" />
+                        <Entry x:Name="txtContra" IsPassword="true" FontSize="Medium" WidthRequest="220" BackgroundColor="#FFEDD7" TextColor="#764304"/>
 
                     </StackLayout>
 
-                    <Button Clicked="GoToHome" 
+                    <Button Clicked="RegistrarUsuario" 
                             Text="Registrar" 
                             Margin="30,40,30,40" 
                             HorizontalOptions="FillAndExpand"

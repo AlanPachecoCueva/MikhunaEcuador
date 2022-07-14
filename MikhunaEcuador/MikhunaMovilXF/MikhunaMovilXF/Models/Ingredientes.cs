@@ -7,9 +7,10 @@ namespace MikhunaMovilXF.Models
         public string Nombre { get; set; }
 
         public string Unidad { get; set; }
+        public string NombreIngre { get; set; }
 
         public int RecetaID { get; set; }
 
-        public virtual Recetas Recetas { get; set; }
+        public Recetas Recetas { get; set; }
     }
 }
