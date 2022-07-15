@@ -23,18 +23,25 @@
                 @Html.ActionLink("Perfil", "Perfil", "Usuarios", new { area = "4" }, new { @class = "txtMikhuna n" })
                 @Html.ActionLink("Login", "Login", "Usuarios", new { area = "4" }, new { @class = "txtMikhuna n" })
             </div>
-            
+
 
             <!--Usuario que inició Sesión-->
+            <div class="iniciologin"
+            <div class="sesion">
+            <div class="iniciosesion">
             @{
                 if (User.Identity.IsAuthenticated)
                 {
-                    <a>@Html.Action("GetUsu", "Usuarios") </a>
-                    <a href="/Usuarios/Logout">Cerrar sesión</a>
+                    <FONT color="	#000000">
+
+                    <b><a>@Html.Action("GetUsu", "Usuarios") </a> </b>
+                    <b>  <a href="/Usuarios/Logout"> |Cerrar sesión</a> </b> </FONT>
                 }
 
             }
-
+            </div>
+            </div>
+            </div>
         </div>
 
     </div>

@@ -125,6 +125,7 @@ footer {
 .buscador {
     width: 50rem;
     height: 2rem;
+    
 }
 
 .cats1 {
@@ -652,9 +653,10 @@ h2 {
 }
 
 .inputsReceta {
-    width:25rem;
-    margin-bottom:0.5rem;
-    margin-top:0.5rem;
+    width: 25rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 9px;
 }
 
 .bCrear {
@@ -716,10 +718,10 @@ h2 {
 }
 
 .inputsIngrediente {
-    margin-top:1rem;
-    margin-bottom:1rem;
-    width:25rem;
-    border-radius:1%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 25rem;
+    border-radius: 10px;
 }
 
 .inputPaso {
@@ -979,5 +981,21 @@ h2 {
     border: 1px solid #ffdfc5;
 }
 
+.iniciosesion {
+    border: 1px solid #ff7500;
+    border-radius: 10px;
+    width: 14rem;
+    height: 1.5rem;
+    padding-left: 1rem;
+    background: #ff7500;
+}
 
+.sesion {
+    border-radius: 20%;
+}
 
+.iniciologin {
+    padding-left: 22rem;
+    border-radius: 20%;
+    
+}
