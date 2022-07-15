@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -19,9 +19,13 @@ namespace MikhunaMovilXF.Views
         public LoginPage()
         {
             InitializeComponent();
+
+            if (DeviceInfo.Platform != DevicePlatform.Android) {
+                logo.Source = "https://res.cloudinary.com/dbxw3bxby/image/upload/v1657848152/logoFinal_dc1qkr.png";
+            }
         }
 
-        public async void IniciarSesion(Object e, EventArgs sender) {
+    public async void IniciarSesion(Object e, EventArgs sender) {
             var contra = txtContra.Text;
             var correo = txtCorreo.Text;
 

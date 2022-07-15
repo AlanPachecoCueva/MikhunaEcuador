@@ -17,7 +17,7 @@ namespace MikhunaMovilXF.ApiRoutes
 
         //Para saber en qué plataforma se está utilizando
         //Si está en android le pasamos la uri del conveyor        //Sino la del localHost
-        public static string BaseAddress = DeviceInfo.Platform == DevicePlatform.Android ? uriConveyorInternet : uriUWP;
+        public static string BaseAddress = DeviceInfo.Platform == DevicePlatform.Android ? uriAndroidEmulador : uriUWP;
 
         public static String URL = BaseAddress;
 
