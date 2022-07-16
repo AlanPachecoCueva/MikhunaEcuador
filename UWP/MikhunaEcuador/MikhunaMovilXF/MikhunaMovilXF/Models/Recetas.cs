@@ -19,7 +19,7 @@ namespace MikhunaMovilXF.Models
 
         public float CalificacionPromedio { get; set; }
 
-         public ICollection<Calificacions> Calificacions { get; set; }
+        public ICollection<Calificacions> Calificacions { get; set; }
 
         public ICollection<Comentarios> Comentarios { get; set; }
 
