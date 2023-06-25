@@ -9,7 +9,7 @@ namespace MikhunaMovilXF.ApiRoutes
     class URI
     {
         
-        public static String uriConveyorInternet = "https://mikhunaapi.conveyor.cloud/api/";
+        public static String uriConveyorInternet = "https://rightredpage86.conveyor.cloud/";
 
         public static String uriAndroidEmulador = "https://10.0.2.2:44308/api/";
 
@@ -17,7 +17,7 @@ namespace MikhunaMovilXF.ApiRoutes
 
         //Para saber en qué plataforma se está utilizando
         //Si está en android le pasamos la uri del conveyor        //Sino la del localHost
-        public static string BaseAddress = DeviceInfo.Platform == DevicePlatform.Android ? uriAndroidEmulador : uriUWP;
+        public static string BaseAddress = DeviceInfo.Platform == DevicePlatform.Android ? uriConveyorInternet : uriUWP;
 
         public static String URL = BaseAddress;
 

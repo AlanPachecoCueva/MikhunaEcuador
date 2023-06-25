@@ -9,7 +9,7 @@ namespace MikhunaEcuador.Models
         [Key]
         public int PasosID { get; set; }
         [Required]
-        [StringLength(100, MinimumLength = 2)]
+        [StringLength(1000, MinimumLength = 2)]
         public string Paso { get; set; }
         public virtual int RecetaID { get; set; }
         [ForeignKey("RecetaID")]
